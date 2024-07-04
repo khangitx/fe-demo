@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DNU - AI">
+    <meta name="keywords" content="DNU AI">
+    <meta name="author" content="DoanMinhKhang">
+    <title>DNU - AI</title>
+    <link rel="stylesheet" href="assets/css/fonts/ff-1.css">
+    <link rel="stylesheet" href="assets/css/fonts/ff-3.css">
+    <link rel="stylesheet" href="assets/css/fonts/bootstrap-icons.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="bgc-light">
+    <!-- Con trỏ tùy chỉnh -->
+    <div class="custom-cursor">
+        <div>
+            <span></span>
+            <svg class="custom-cursor__img" width="119" height="45" viewBox="0 0 119 45" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1130_4828)">
+                    <path
+                        d="M10.9627 22.9931L12.2909 16.1687C12.603 14.5633 14.1573 13.0107 15.7632 12.7011L21.5757 11.5778C23.181 11.2681 23.2911 10.4355 21.8214 9.719L2.95694 0.527836C1.48667 -0.188687 0.764833 0.470432 1.34397 1.99934L9.34853 23.1305C9.92766 24.6594 10.6501 24.5984 10.9627 22.9931Z"
+                        fill="url(#paint0_linear_1130_4828)" />
+                </g>
+                <rect x="16" y="16.2383" width="103" height="28" rx="4" fill="url(#paint1_linear_1130_4828)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1130_4828" x1="-58.0002" y1="-33.2617" x2="25.4638" y2="2.23919"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="1" stop-color="#F49959" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1130_4828" x1="-53.2743" y1="34.7382" x2="110.992" y2="27.6664"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="1" stop-color="#F49959" />
+                    </linearGradient>
+                    <clipPath id="clip0_1130_4828">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.238281)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div></div>
+    </div>
+    <!-- /Con trỏ tùy chỉnh -->
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader__img">
+            <img src="assets/img/preloader-img.png" alt="hình ảnh">
+        </div>
+    </div>
+    <!-- preloader End -->
+    <!-- Header 5 -->
+    <header class="header header--5 header--fixed py-lg-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="menu d-lg-flex justify-content-lg-between align-items-lg-center py-3 py-lg-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="index.html" class="logo link d-inline-flex align-items-center flex-shrink-0">
+                                <img src="assets/img/logo.png" alt="logo" class="img-fluid object-fit-contain">
+                            </a>
+                            <button
+                                class="menu-toggle w-8 h-8 p-0 border-0 lh-1 bg-primary-50 clr-neutral-100 :clr-neutral-100 transition :bg-primary-300 rounded flex-shrink-0 d-lg-none order-sm-3 fs-24">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="menu-nav d-flex align-items-lg-center flex-column flex-lg-row flex-grow-1 gap-4 pb-4 pb-lg-0 rounded">
+                            <ul class="list list-lg-row mx-lg-auto rounded-3">
+                                <li class="menu-list">
+                                    <a href="#" class="link menu-link has-sub"> Trang chủ </a>
+                                    <ul class="list menu-sub">
+                                        <li class="menu-sub-list">
+                                            <a href="index.html" class="link menu-sub-link gap-4">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-image-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> Tạo Hình Ảnh AI </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-2.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-saas-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> AI SaaS </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-3.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-chatbot-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> AI Chatbot </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-4.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-content-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> Tạo Nội Dung AI </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-5.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-voice-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> Tạo Giọng Nói AI </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-6.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-video-icon.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span> Trình Tạo Video AI </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="index-7.html" class="link menu-sub-link gap-3">
+                                                <span class="d-none d-lg-inline-block">
+                                                    <img src="assets/img/ai-saas-icon-2.png" alt="hình ảnh"
+                                                        class="img-fluid">
+                                                </span>DNU - AI </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="pricing.html" class="link menu-link"> Bảng Giá </a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#" class="link menu-link has-sub"> Blog </a>
+                                    <ul class="list menu-sub">
+                                        <li class="menu-sub-list">
+                                            <a href="blog-1.html" class="link menu-sub-link"> Danh Sách Blog 1 </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="blog-2.html" class="link menu-sub-link"> Danh Sách Blog 2 </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="blog-details.html" class="link menu-sub-link"> Chi Tiết Blog </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#" class="link menu-link has-sub"> Trang </a>
+                                    <ul class="list menu-sub">
+                                        <li class="menu-sub-list">
+                                            <a href="featured.html" class="link menu-sub-link"> Nổi Bật </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="about.html" class="link menu-sub-link"> Về Chúng Tôi </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="use-cases.html" class="link menu-sub-link"> Trường Hợp Sử Dụng </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="copywrite.html" class="link menu-sub-link"> Bản Quyền </a>
+                                        </li>
+                                        <li class="menu-sub-list">
+                                            <a href="faq.html" class="link menu-sub-link"> Câu Hỏi Thường Gặp </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list list-row gap-xl-6 gap-lg-4 bg-transparent align-items-center">
+                                <li class="menu-list mx-4 mx-lg-0">
+                                    <a href="login.html"
+                                        class="link d-inline-flex justify-content-center py-3 px-xl-5 px-4 fs-14 fw-bold text-center clr-primary-10 py-2 px-4 rounded-1 h5-btn-border-left bg-white-12">
+                                        Đăng Nhập </a>
+                                </li>
+                                <li class="menu-list menu-list-border-none mx-4 mx-lg-0">
+                                    <a href="register.html"
+                                        class="link py-3 px-xl-5 px-4 bg-primary-10 :bg-primary-40 rounded-1 fs-14 fw-bold text-center clr-white">
+                                        Bắt Đầu </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header 5 -->
+    <!-- Hero 5 -->
+    <div class="hero-5 section-space-sm-bottom">
+        <div class="container">
+            <div class="row gy-4 align-items-center justify-content-center">
+                <div class="col-lg-7 text-lg-start text-center">
+                    <img src="assets/img/hero-5-title-top.webp" alt="hình ảnh phần tử trên cùng"
+                        class="img-fluid fadeIn_bottom">
+                    <h2 class="hero-5-title mb-0 clr-primary-10 fw-extrabold mt-2 animate-text-from-right"> Loại Bỏ
+                        Giọng Hát <img src="assets/img/hero-5-title-el.webp" alt="hình ảnh tiêu đề"
+                            class="img-fluid fadeIn_bottom"> Cho Nhà Sản Xuất Âm Nhạc </h2>
+                    <p class="clr-primary-10 fw-bold mt-4 ff-1 max-text-50 animate-text-from-right">Giải pháp một cửa
+                        của bạn cho việc tạo nội dung, tạo âm thanh, tạo hình ảnh và phát triển chatbot AI.</p>
+                    <div
+                        class="d-flex flex-wrap align-items-center gap-6 mt-xl-10 mt-lg-8 mt-6 justify-content-lg-start justify-content-center fadeIn_bottom">
+                        <a href="login.html" target="_blank"
+                            class="link d-inline-block py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1">
+                            Dùng Thử Miễn Phí </a>
+                        <a href="register.html" target="_blank"
+                            class="link d-inline-block py-3 px-7 rounded-1 fs-14 fw-bold text-center clr-primary-10 :clr-neutral-100 :bg-primary-10 border border-primary-10 ff-1">
+                            Đặt Lịch Demo </a>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-5">
+                    <div class="position-relative">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="assets/img/hero-5-right-3.webp" alt="hình ảnh"
+                                    class="img-fluid mt-6 fadein_bottom_29">
+                                <img src="assets/img/hero-5-right-4.webp" alt="hình ảnh"
+                                    class="img-fluid mt-6 fadein_bottom_29">
+                            </div>
+                            <div class="col-6">
+                                <img src="assets/img/hero-5-right-1.webp" alt="hình ảnh"
+                                    class="img-fluid fadein_bottom_29">
+                                <img src="assets/img/hero-5-right-2.webp" alt="hình ảnh"
+                                    class="img-fluid mt-6 fadein_bottom_29">
+                            </div>
+                        </div>
+                        <img src="assets/img/hero-5-right-arrow1.webp" alt="hình ảnh"
+                            class="img-fluid position-absolute hero-5__right hero-5__right-arrow1 fadein_bottom_29">
+                        <img src="assets/img/hero-5-right-arrow2.webp" alt="hình ảnh"
+                            class="img-fluid position-absolute hero-5__right hero-5__right-arrow2 fadein_bottom_29">
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 section-space-top">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-5 p-sm-6 bg-white rounded-3 fadein_bottom_30">
+                        <div class="d-flex flex-wrap align-items-center gap-4">
+                            <span
+                                class="w-11 h-11 rounded-circle bg-primary-90 d-grid place-content-center clr-primary-key fs-20">
+                                <i class="bi bi-apple"></i>
+                            </span>
+                            <h6 class="fs-18 mb-0">Đã chuyển đổi</h6>
+                        </div>
+                        <h4 class="mt-6 mt-xxl-7 h5 fw-extrabold">76% Khách hàng sử dụng</h4>
+                        <p class="mb-0 mt-0 mt-lg-3 mt-xxl-4">Công cụ dịch thuật hỗ trợ AI có thể nhanh chóng dịch nội
+                            dung</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-5 p-sm-6 bg-white rounded-3 fadein_bottom_30">
+                        <div class="d-flex flex-wrap align-items-center gap-4">
+                            <span
+                                class="w-11 h-11 rounded-circle bg-primary-90 d-grid place-content-center clr-primary-key fs-20">
+                                <i class="bi bi-hypnotize"></i>
+                            </span>
+                            <h6 class="fs-18 mb-0">Đã chuyển đổi</h6>
+                        </div>
+                        <h4 class="mt-6 mt-xxl-7 h5 fw-extrabold">06 GIỜ</h4>
+                        <p class="mb-0 mt-0 mt-lg-3 mt-xxl-4">Công cụ dịch thuật hỗ trợ AI có thể nhanh chóng dịch nội
+                            dung</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-5 p-sm-6 bg-white rounded-3 fadein_bottom_30">
+                        <div class="d-flex flex-wrap align-items-center gap-4">
+                            <span
+                                class="w-11 h-11 rounded-circle bg-primary-90 d-grid place-content-center clr-primary-key fs-20">
+                                <i class="bi bi-apple"></i>
+                            </span>
+                            <h6 class="fs-18 mb-0">Đã chuyển đổi</h6>
+                        </div>
+                        <h4 class="mt-6 mt-xxl-7 h5 fw-extrabold">20000 Tệp</h4>
+                        <p class="mb-0 mt-0 mt-lg-3 mt-xxl-4">Công cụ dịch thuật hỗ trợ AI có thể nhanh chóng dịch nội
+                            dung</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-17">
+                <div class="col-12">
+                    <div class="bg-white-grad-4 py-6 px-8 text-center fadeIn_bottom">
+                        <h5 class="h6 fw-bold mb-0">Hơn 15.000 khách hàng tin tưởng DNU - AI <a href="#0"
+                                class="clr-grad-7">Gặp Gỡ Khách Hàng Của Bạn</a> <i class="bi bi-arrow-right"></i></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/hero-5-shade-top.webp" alt="hình ảnh" class="img-fluid hero-5__shape hero-5__shape-top">
+        <img src="assets/img/hero-5-shade-left.webp" alt="hình ảnh" class="img-fluid hero-5__shape hero-5__shape-left">
+        <img src="assets/img/hero-5-shade-left-2.webp" alt="hình ảnh"
+            class="img-fluid hero-5__shape hero-5__shape-left-2">
+        <img src="assets/img/hero-5-shade-circle.webp" alt="hình ảnh"
+            class="img-fluid hero-5__shape hero-5__shape-circle">
+        <img src="assets/img/hero-5-shade-right.webp" alt="hình ảnh"
+            class="img-fluid hero-5__shape hero-5__shape-right">
+        <img src="assets/img/hero-5-top-digit.png" alt="hình ảnh" class="img-fluid hero-5__shape hero-5__shape-digit">
+    </div>
+    <!-- /Hero 5 -->
+    <section class="section-space-sm-top section-space-sm-bottom voice-upload-section position-relative">
+        <div class="section-space-sm-bottom">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="position-relative text-center">
+                            <h3 class="fw-extrabold animate-line-3d">Tách Giọng Hát Khỏi Nhạc Nền Với <span
+                                    class="clr-grad-7">Một Click Với Bản Demo</span></h3>
+                            <p class="animate-text-from-bottom">Media.io Online Vocal Remover có thể tách tất cả giọng
+                                hát và nhạc cụ được hòa trộn từ một bài hát. Điều này cho phép bạn sử dụng phần được
+                                trích xuất.</p>
+                            <img src="assets/img/home-5-lightning-fill.png" alt="hình ảnh"
+                                class="img-fluid section-title-obj-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-10">
+                    <div class="bg-primary-90 p-2 rounded-3 fadeIn_bottom">
+                        <ul class="nav bg-white pill-tabs rounded-3 justify-content-between py-1 px-2" id="pills-tab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active rounded-3 px-3 fw-medium" id="pills-vocal-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-vocal" type="button" role="tab"
+                                    aria-controls="pills-vocal" aria-selected="true">Loại Giọng Hát</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 px-3 fw-medium" id="pills-music-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-music" type="button" role="tab"
+                                    aria-controls="pills-music" aria-selected="false">Trình Tạo Nhạc</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 px-3 fw-medium" id="pills-video-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab"
+                                    aria-controls="pills-video" aria-selected="false">Video thành âm thanh</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 px-3 fw-medium" id="pills-noise-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-noise" type="button" role="tab"
+                                    aria-controls="pills-noise" aria-selected="false">Giảm Tiếng Ồn</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 px-3 fw-medium" id="pills-voice-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-voice" type="button" role="tab"
+                                    aria-controls="pills-voice" aria-selected="false">Đổi Giọng Nói</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content voice-upload-tab-content  position-relative text-center fadeIn_bottom"
+                        id="pills-tabContent">
+                        <img src="assets/img/voice-upload-tab-bg.webp" alt="hình ảnh"
+                            class="img-fluid voice-upload-tab-bg">
+                        <div class="tab-pane fade show active" id="pills-vocal" role="tabpanel"
+                            aria-labelledby="pills-vocal-tab" tabindex="0">
+                            <img src="assets/img/voice-upload-tab-1.webp" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="pills-music" role="tabpanel" aria-labelledby="pills-music-tab"
+                            tabindex="0">
+                            <img src="assets/img/music-generator.png" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab"
+                            tabindex="0">
+                            <img src="assets/img/video-to-audio.png" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="pills-noise" role="tabpanel" aria-labelledby="pills-noise-tab"
+                            tabindex="0">
+                            <img src="assets/img/noise-reducer.png" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab"
+                            tabindex="0">
+                            <img src="assets/img/voice-changer.png" alt="hình ảnh" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/home-5-header-top-el.webp" alt="hình ảnh" class="img-fluid section-top-bg-shape">
+        <img src="assets/img/home-5-right-shape.png" alt="hình ảnh" class="img-fluid section-right-bg-shape">
+    </section>
+    <section class="section-space-sm-top section-space-sm-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div
+                        class="why-choose-wrapper bg-black section-space-top section-space-bottom rounded-5 position-relative overflow-hidden fadeIn_bottom">
+                        <img src="assets/img/why-choose-top-digit.png" alt="hình ảnh"
+                            class="img-fluid why-choose-wrapper-el why-choose-wrapper-el-digit">
+                        <img src="assets/img/why-choose-right-top.webp" alt="hình ảnh"
+                            class="img-fluid why-choose-wrapper-el why-choose-wrapper-el-top">
+                        <img src="assets/img/why-choose-right-bottom.webp" alt="hình ảnh"
+                            class="img-fluid why-choose-wrapper-el why-choose-wrapper-el-bottom">
+                        <div class="section-space-xsm-bottom">
+                            <h3 class="text-white fw-extrabold max-text-24 animate-text-from-right"> Tại Sao Chọn
+                                DNU - AI <img src="assets/img/why-choose-sound-icon.png" alt="hình ảnh"
+                                    class="img-fluid fadeIn_bottom">
+                                <span class="clr-grad-7 d-inline-block">Trình Loại Bỏ Giọng Hát Trực Tuyến?</span>
+                            </h3>
+                            <p class="max-text-60 clr-neutral-87 animate-text-from-right"> Media.io Online Vocal Remover
+                                có thể tách tất cả giọng hát và nhạc cụ được hòa trộn từ một bài hát. Điều này cho phép
+                                bạn sử dụng phần được trích xuất. </p>
+                        </div>
+                        <ul class="nav bg-neutral-key pill-tabs pill-tabs-style-two rounded-3 justify-content-between py-1 px-2 d-inline-flex gap-3 gap-lg-4 gap-xl-5 gap-xxl-7 fadeIn_bottom"
+                            id="pills-tab-choose" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active rounded-3 py-3 px-7 fw-medium fs-14"
+                                    id="pills-upload-tab" data-bs-toggle="pill" data-bs-target="#pills-upload"
+                                    type="button" role="tab" aria-controls="pills-upload" aria-selected="true">
+                                    <i class="bi bi-cloud-upload"></i> Tải Lên Tệp </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 py-3 px-7 fw-medium fs-14" id="pills-team-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-team" type="button" role="tab"
+                                    aria-controls="pills-team" aria-selected="false">
+                                    <i class="bi bi-person"></i> Đội Nhóm </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 py-3 px-7 fw-medium fs-14" id="pills-project-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-project" type="button" role="tab"
+                                    aria-controls="pills-project" aria-selected="false">
+                                    <i class="bi bi-gear"></i> Dự Án </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 py-3 px-7 fw-medium fs-14" id="pills-connection-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-connection" type="button" role="tab"
+                                    aria-controls="pills-connection" aria-selected="false">
+                                    <i class="bi bi-folder-check"></i> Kết Nối </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content section-space-sm-top" id="pills-choose-tabContent">
+                            <div class="tab-pane fade show active" id="pills-upload" role="tabpanel"
+                                aria-labelledby="pills-upload-tab" tabindex="0">
+                                <div class="row gy-4 justify-content-between align-items-center">
+                                    <div class="col-lg-5">
+                                        <h4 class="clr-white h5 max-text-20 animate-line-3d"> Dễ dàng tải lên tệp nhạc
+                                            nguồn </h4>
+                                        <p class="clr-neutral-80 my-6 animate-text-from-right"> DNU - AI là một phần
+                                            mềm demo sản phẩm linh hoạt được tạo ra để thúc đẩy thành công của các nhóm
+                                            bán hàng, sản phẩm và tăng trưởng đổi mới và tiến bộ. </p>
+                                        <ul class="list gap-3">
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                            </li>
+                                        </ul>
+                                        <div class="fadeIn_bottom">
+                                            <a href="about.html" target="_blank"
+                                                class="link d-inline-flex gap-2 mt-12 py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1">
+                                                Bắt đầu miễn phí <i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/why-choose-av-1.webp" alt="hình ảnh"
+                                            class="img-fluid fadeIn_bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-team" role="tabpanel" aria-labelledby="pills-team-tab"
+                                tabindex="0">
+                                <div class="row gy-4 justify-content-between align-items-center">
+                                    <div class="col-lg-5">
+                                        <h4 class="clr-white h5 max-text-20">Dễ dàng tải lên tệp nhạc nguồn</h4>
+                                        <p class="clr-neutral-80 my-6"> DNU - AI là một phần mềm demo sản phẩm linh
+                                            hoạt được tạo ra để thúc đẩy thành công của các nhóm bán hàng, sản phẩm và
+                                            tăng trưởng đổi mới và tiến bộ. </p>
+                                        <ul class="list gap-3">
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                            </li>
+                                        </ul>
+                                        <div class="fadeIn_bottom">
+                                            <a href="login.html"
+                                                class="link d-inline-flex gap-2 mt-12 py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1">
+                                                Bắt đầu miễn phí <i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/why-choose-av-3.png" alt="hình ảnh" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-project" role="tabpanel"
+                                aria-labelledby="pills-project-tab" tabindex="0">
+                                <div class="row gy-4 justify-content-between align-items-center">
+                                    <div class="col-lg-5">
+                                        <h4 class="clr-white h5 max-text-20">Dễ dàng tải lên tệp nhạc nguồn</h4>
+                                        <p class="clr-neutral-80 my-6">DNU - AI là một phần mềm demo sản phẩm linh
+                                            hoạt được tạo ra để thúc đẩy thành công của các nhóm bán hàng, sản phẩm và
+                                            tăng trưởng đổi mới và tiến bộ.</p>
+                                        <ul class="list gap-3">
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                            </li>
+                                        </ul>
+                                        <a href="login.html"
+                                            class="link d-inline-flex gap-2 mt-12 py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1">
+                                            Bắt đầu miễn phí <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/why-choose-av-3.png" alt="hình ảnh" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-connection" role="tabpanel"
+                                aria-labelledby="pills-connection-tab" tabindex="0">
+                                <div class="row gy-4 justify-content-between align-items-center">
+                                    <div class="col-lg-5">
+                                        <h4 class="clr-white h5 max-text-20">Dễ dàng tải lên tệp nhạc nguồn</h4>
+                                        <p class="clr-neutral-80 my-6">DNU - AI là một phần mềm demo sản phẩm linh
+                                            hoạt được tạo ra để thúc đẩy thành công của các nhóm bán hàng, sản phẩm và
+                                            tăng trưởng đổi mới và tiến bộ.</p>
+                                        <ul class="list gap-3">
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                            </li>
+                                            <li class="clr-neutral-70 d-flex align-items-center gap-2">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                            </li>
+                                        </ul>
+                                        <a href="login.html"
+                                            class="link d-inline-flex gap-2 mt-12 py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1">
+                                            Bắt đầu miễn phí <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/why-choose-av-1.webp" alt="hình ảnh" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-work-section section-space-sm-top section-space-sm-bottom position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="position-relative text-center">
+                        <h3 class="fw-extrabold animate-line-3d">Cách Tách và Loại Bỏ Giọng Hát <span
+                                class="clr-grad-7">từ một Bài Hát Trực Tuyến?</span></h3>
+                        <p class="max-text-60 mx-auto animate-text-from-bottom">Media.io Online Vocal Remover có thể
+                            tách tất cả giọng hát và nhạc cụ được hòa trộn từ một bài hát. Điều này cho phép bạn sử dụng
+                            phần được trích xuất.</p>
+                        <img src="assets/img/home-5-music-note.webp" alt="hình ảnh"
+                            class="img-fluid section-title-obj-img fadeIn_bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-space-sm-top">
+            <div class="container">
+                <div class="how-work-wrapper">
+                    <div class="how-work-single-row">
+                        <div class="thumb fadeIn_bottom">
+                            <img src="assets/img/how-work-1.webp" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="content">
+                            <img src="assets/img/how-work-music-wave.webp" alt="hình ảnh"
+                                class="img-fluid mb-3 fadeIn_bottom">
+                            <h4 class="animate-line-3d">Tải lên Tệp Nhạc Nguồn</h4>
+                            <p class="my-6 animate-text-from-right">Bạn muốn chia sẻ dữ liệu của mình với đồng đội? Chà,
+                                bạn có thể. May mắn thay, biểu mẫu hỗ trợ điều đó, hãy mời khách hàng hoặc thành viên
+                                nhóm của bạn đến biểu mẫu của bạn chỉ trong vài giây, sau đó cùng nhau kiểm tra. Không
+                                có giới hạn nhóm tham gia</p>
+                            <ul class="list gap-3">
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- how-work-single-row end -->
+                    <div class="how-work-single-row">
+                        <div class="thumb fadeIn_bottom">
+                            <img src="assets/img/how-work-2.webp" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="content">
+                            <img src="assets/img/how-work-music-wave.webp" alt="hình ảnh"
+                                class="img-fluid mb-3 fadeIn_bottom">
+                            <h4 class="animate-line-3d">Xử lý & Trích xuất Tự động</h4>
+                            <p class="my-6 animate-text-from-right">Bạn muốn chia sẻ dữ liệu của mình với đồng đội? Chà,
+                                bạn có thể. May mắn thay, biểu mẫu hỗ trợ điều đó, hãy mời khách hàng hoặc thành viên
+                                nhóm của bạn đến biểu mẫu của bạn chỉ trong vài giây, sau đó cùng nhau kiểm tra. Không
+                                có giới hạn nhóm tham gia</p>
+                            <ul class="list gap-3">
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- how-work-single-row end -->
+                    <div class="how-work-single-row">
+                        <div class="thumb fadeIn_bottom">
+                            <img src="assets/img/how-work-3.webp" alt="hình ảnh" class="img-fluid">
+                        </div>
+                        <div class="content">
+                            <img src="assets/img/how-work-music-wave.webp" alt="hình ảnh"
+                                class="img-fluid mb-3 fadeIn_bottom">
+                            <h4 class="animate-line-3d">Xem trước & Tải xuống Bài hát</h4>
+                            <p class="my-6 animate-text-from-right">Bạn muốn chia sẻ dữ liệu của mình với đồng đội? Chà,
+                                bạn có thể. May mắn thay, biểu mẫu hỗ trợ điều đó, hãy mời khách hàng hoặc thành viên
+                                nhóm của bạn đến biểu mẫu của bạn chỉ trong vài giây, sau đó cùng nhau kiểm tra. Không
+                                có giới hạn nhóm tham gia</p>
+                            <ul class="list gap-3">
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Hỗ trợ & Thành công Hàng đầu Ngành</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Giải pháp Mở rộng cho sự Phát triển của bạn</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start fadeIn_bottom">
+                                    <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                        class="img-fluid">
+                                    <span>Mở Khóa Khả năng với Phân tích Nâng cao</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- how-work-single-row end -->
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/home-5-header-top-el-2.png" alt="hình ảnh" class="img-fluid section-top-bg-shape">
+        <img src="assets/img/home-5-left-shape.png" alt="hình ảnh" class="img-fluid how-work-shape how-work-shape-left">
+        <img src="assets/img/home-5-right-shape.png" alt="hình ảnh"
+            class="img-fluid how-work-shape how-work-shape-right">
+    </section>
+    <section class="newletter-section-2 section-space-sm-top section-space-sm-bottom">
+        <div class="container">
+            <div
+                class="newsletter-wrappper rounded-4 overflow-hidden section-space-top section-space-sm-bottom px-xl-10 px-6 fadeIn_bottom">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-6 col-xl-8 col-lg-10">
+                        <h3 class="fw-extrabold text-center clr-white mb-0 animate-line-3d">Bắt Đầu <span
+                                class="clr-grad-7">Ngay Bây Giờ</span></h3>
+                        <p class="clr-neutral-90 text-center mt-6 mb-7 animate-text-from-bottom">Tự động hóa quản lý
+                            chiến dịch. Tự động hóa tăng trưởng.</p>
+                        <form
+                            class="d-flex flex-sm-row flex-column gap-sm-0 gap-3 p-3 bg-primary-10 rounded-3 fadeIn_bottom newsletter-1--alt border border-primary-20">
+                            <input type="email"
+                                class="form-control newsletter-1__input bg-transparent text-sm-start text-center clr-neutral-90"
+                                name="#" placeholder="tham gia cộng đồng">
+                            <button type="button"
+                                class="newsletter-1__btn d-inline-flex justify-content-center gap-2 py-3 px-5 rounded-3 fw-bold clr-white bg-grad-4">Đăng
+                                ký <i class="bi bi-arrow-up-right"></i></button>
+                        </form>
+                        <p class="text-center clr-primary-90 fs-14 mt-7 animate-text-from-bottom">✓ Dùng thử miễn phí 14
+                            ngày ✓ Không cần thẻ tín dụng ✓ Hủy bỏ bất cứ lúc nào</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-section-4 section-space-sm-top section-space-sm-bottom position-relative">
+        <div class="container">
+            <div
+                class="pricing-section-4-wrapper rounded-4 surface-bright section-space-top section-space-bottom position-relative overflow-hidden px-5 px-lg-10 px-xxl-20">
+                <div class="row gy-4 align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <h3 class="fw-extrabold mb-0 animate-line-3d">Chọn Gói Giá Bắt Đầu <span class="clr-grad-7">Tạo
+                                Bảng Giá.</span></h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="mb-0 animate-text-from-right">Media.io Online Vocal Remover có thể tách tất cả giọng
+                            hát và nhạc cụ được hòa trộn từ một bài hát. Điều này cho phép bạn sử dụng phần được trích
+                            xuất.</p>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-11">
+                            <div class="row gy-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-5 p-4 p-md-10 fadein_bottom_31">
+                                        <h6 class="mb-3"> Gói Miễn Phí </h6>
+                                        <span class="d-block mb-3 clr-neutral-variant-50 fs-14"> Bắt đầu với giới hạn
+                                            3.000 từ </span>
+                                        <h4 class="monthly-price mb-10 clr-primary-10 fw-extrabold"> 0 Vnd/tháng </h4>
+                                        <h4 class="yearly-price mb-10 clr-primary-10 fw-extrabold"> 0 Vnd/năm </h4>
+                                        <a href="login.html"
+                                            class="link d-inline-flex justify-content-center align-items-center gap-2 mb-10 py-2 px-4 border border-primary-10 bg-primary-10 rounded-3 fs-14 fw-bold text-center clr-white :bg-grad-4 :border-opacity-0">
+                                            <span class="d-block"> Dùng Thử Miễn Phí </span>
+                                            <span class="d-block fs-10">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="list gap-4">
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 25 Tin Nhắn
+                                                        Miễn Phí </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 1 Chatbot
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Mô hình Cơ bản
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 100 Danh bạ
+                                                        Được Lưu </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Hỗ trợ Cơ bản
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div
+                                        class="bg-white rounded-5 p-4 p-md-10 fadein_bottom_31 position-relative z-1 overflow-hidden">
+                                        <span class="pricing-label bg-secondary-40"> Gói Phổ biến </span>
+                                        <h6 class="mb-3">Gói Phổ biến</h6>
+                                        <span class="d-block mb-3 clr-neutral-variant-50 fs-14"> Bắt đầu với giới hạn
+                                            3.000 từ </span>
+                                        <h4 class="monthly-price mb-10 clr-primary-10 fw-extrabold"> 600.000 Vnd/tháng
+                                        </h4>
+                                        <h4 class="yearly-price mb-10 clr-primary-10 fw-extrabold"> $0/năm </h4>
+                                        <a href="login.html" target="_blank"
+                                            class="link d-inline-flex justify-content-center align-items-center gap-2 mb-10 py-2 px-4 border border-primary-10 :bg-primary-10 rounded-3 fs-14 fw-bold text-center clr-white bg-grad-4 border-opacity-0">
+                                            <span class="d-block"> Dùng Thử Miễn Phí </span>
+                                            <span class="d-block fs-10">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="list gap-4">
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Bao gồm 1.500
+                                                        Tin Nhắn </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 2 Chatbots
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Mô hình Nâng
+                                                        cao (GPT-4) </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 200 Tệp và
+                                                        Trang web </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 1.000 Danh bạ
+                                                        Được Lưu </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-5 p-4 p-md-10 fadein_bottom_31">
+                                        <h6 class="mb-3"> Gói Cao cấp </h6>
+                                        <span class="d-block mb-3 clr-neutral-variant-50 fs-14"> Bắt đầu với giới hạn
+                                            3.000 từ </span>
+                                        <h4 class="monthly-price mb-10 clr-primary-10 fw-extrabold"> 600.000 Vnd/tháng
+                                        </h4>
+                                        <h4 class="yearly-price mb-10 clr-primary-10 fw-extrabold"> 0 Vnd/năm </h4>
+                                        <a href="login.html" target="_blank"
+                                            class="link d-inline-flex justify-content-center align-items-center gap-2 mb-10 py-2 px-4 border border-primary-10 bg-primary-10 rounded-3 fs-14 fw-bold text-center clr-white :bg-grad-4 :border-opacity-0">
+                                            <span class="d-block"> Dùng Thử Miễn Phí </span>
+                                            <span class="d-block fs-10">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="list gap-4">
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Bao gồm 5.000
+                                                        Tin Nhắn </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 10 Chatbots
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Mô hình Nâng
+                                                        cao (GPT-4) </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> 500 Tệp và
+                                                        Trang web </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex gap-3">
+                                                    <span
+                                                        class="flex-shrink-0 d-grid place-content-center w-5 h-5 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-10">
+                                                        <i class="bi bi-check2"></i>
+                                                    </span>
+                                                    <span class="d-block fs-14 clr-primary-10 fw-medium"> Danh bạ Được
+                                                        Lưu Không giới hạn... </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10 bg-white py-8 py-xl-10 px-5 px-xxl-20 rounded-5">
+                                <div class="row gy-4 align-items-center justify-content-between">
+                                    <div class="col-auto">
+                                        <img src="assets/img/logo.png" alt="logo" class="img-fluid fadeIn_bottom">
+                                        <p class="max-text-40 mt-3 animate-text-from-right">Cấp phép & gói giá phù hợp
+                                            cho tổ chức của bạn</p>
+                                        <a href="about.html" target="_blank"
+                                            class="link py-3 px-7 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1 d-inline-flex gap-2 align-items-center mt-2 fadeIn_bottom">
+                                            <span>Liên hệ với chúng tôi</span>
+                                            <span class="fs-10">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img src="assets/img/home-5-pricing-bottom.webp" alt="hình ảnh"
+                                            class="img-fluid fadeIn_bottom">
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="list gap-3">
+                                            <li class="d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span class="fs-14 fw-semibold">Điều khoản cấp phép tùy chỉnh</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span class="fs-14 fw-semibold">Mẫu tùy chỉnh</span>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 fadeIn_bottom">
+                                                <img src="assets/img/list-star.png" alt="hình ảnh biểu tượng ngôi sao"
+                                                    class="img-fluid">
+                                                <span class="fs-14 fw-semibold">Kiếm tiền từ mẫu của bạn trên
+                                                    Soundful</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/home-5-pricing-top.png" alt="hình ảnh"
+                    class="img-fluid pricing-section-4-top-img position-absolute">
+            </div>
+        </div>
+        <img src="assets/img/home-5-left-shape.png" alt="hình ảnh"
+            class="img-fluid pricing-section-shape pricing-section-shape-left">
+        <img src="assets/img/home-5-right-shape.png" alt="hình ảnh"
+            class="img-fluid pricing-section-shape pricing-section-shape-right">
+    </section>
+    <section class="testimonial-section-2 section-space-sm-top section-space-sm-bottom overflow-hidden">
+        <div class="container">
+            <div class="testimonial-section-2-wrapper">
+                <div class="row gy-4">
+                    <div class="col-xl-5">
+                        <div class="row gy-5 justify-content-end">
+                            <div class="col-lg-6 col-xl-12">
+                                <h3 class="fw-extrabold max-text-24 animate-text-from-right">Niềm Tin Của Chúng Tôi <img
+                                        src="assets/img/thumbs.png" alt="hình ảnh" class="img-fluid fadeIn_bottom">
+                                    <span class="clr-grad-7 d-block animate-text-from-right">Câu Chuyện Khách
+                                        Hàng</span></h3>
+                                <h6 class="fs-18 mt-3 mt-lg-6 animate-text-from-right">Xuất sắc 4,7 trên 5</h6>
+                                <a href="about.html"
+                                    class="link d-inline-flex justify-content-center align-items-center gap-2 mt-4 mt-lg-6 py-3 px-4 border border-primary-10 bg-primary-10 rounded-1 fs-14 fw-bold text-center clr-white :bg-grad-4 :border-opacity-0 fadeIn_bottom">
+                                    <span class="d-block"> Xem thêm </span>
+                                    <span class="d-block fs-10">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-xl-9">
+                                <div class="bg-white py-8 py-lg-12 py-xl-15 px-6 px-lg-8 px-xl-10 rounded-3">
+                                    <div class="d-flex flex-wrap align-items-center gap-4">
+                                        <div class="w-16 h-16 rounded-circle overflow-hidden fadeIn_bottom">
+                                            <img src="assets/img/testimonial-2-avatar-3.webp" alt="hình ảnh"
+                                                class="img-fluid object-fit-cover w-100 h-100">
+                                        </div>
+                                        <div>
+                                            <h5 class="fs-24 fw-bold mb-1 clr-primary-10 animate-text-from-right">Đoàn
+                                                Minh Khang</h5>
+                                            <p class="mb-0 fw-medium animate-text-from-right">Nhà Thiết Kế</p>
+                                        </div>
+                                    </div>
+                                    <h5
+                                        class="h6 fw-bold mt-6 mt-lg-8 mt-xl-10 mb-4 mb-lg-6 clr-primary-10 animate-text-from-right">
+                                        Chúng tôi có một công cụ tuyệt vời!</h5>
+                                    <p class="mb-0 animate-text-from-right">@maccaw holy shit thiết kế ứng dụng reflect
+                                        thật tuyệt vời, khả năng viết và khả năng chiêm nghiệm của tôi đã tăng gấp 10
+                                        lần kể từ khi tôi sử dụng nó. đã sử dụng bear / notion trước đây nhưng sự đơn
+                                        giản của reflect thật đẹp ai wirtebot cotbot</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="row gy-4 justify-content-end">
+                            <div class="col-xl-10 col-lg-6">
+                                <div class="bg-white py-8 py-lg-12 py-xl-15 px-6 px-lg-8 px-xl-10 rounded-3">
+                                    <div class="d-flex flex-wrap align-items-center gap-4">
+                                        <div class="w-16 h-16 rounded-circle overflow-hidden fadeIn_bottom">
+                                            <img src="assets/img/testimonial-2-avatar-1.webp" alt="hình ảnh"
+                                                class="img-fluid object-fit-cover w-100 h-100">
+                                        </div>
+                                        <div>
+                                            <h5 class="fs-24 fw-bold mb-1 clr-primary-10 animate-text-from-right">Đoàn
+                                                Minh Khang</h5>
+                                            <p class="mb-0 fw-medium animate-text-from-right">Nhà Thiết Kế</p>
+                                        </div>
+                                    </div>
+                                    <h5
+                                        class="h6 fw-bold mt-6 mt-lg-8 mt-xl-10 mb-4 mb-lg-6 clr-primary-10 reveal-text">
+                                        Dịch Vụ Tuyệt Vời Cho Trình Loại Bỏ Giọng Hát AI</h5>
+                                    <p class="mb-0 animate-text-from-right">@maccaw holy shit thiết kế ứng dụng reflect
+                                        thật tuyệt vời, khả năng viết và khả năng chiêm nghiệm của tôi đã tăng gấp 10
+                                        lần kể từ khi tôi sử dụng nó. đã sử dụng bear / notion trước đây nhưng sự đơn
+                                        giản của reflect thật đẹp</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="bg-white py-8 py-lg-12 py-xl-15 px-6 px-lg-8 px-xl-10 rounded-3">
+                                    <div class="d-flex flex-wrap align-items-center gap-4">
+                                        <div class="w-16 h-16 rounded-circle overflow-hidden fadeIn_bottom">
+                                            <img src="assets/img/testimonial-2-avatar-2.webp" alt="hình ảnh"
+                                                class="img-fluid object-fit-cover w-100 h-100">
+                                        </div>
+                                        <div>
+                                            <h5 class="fs-24 fw-bold mb-1 clr-primary-10 animate-text-from-right">Đoàn
+                                                Minh Khang</h5>
+                                            <p class="mb-0 fw-medium animate-text-from-right">Nhà Thiết Kế</p>
+                                        </div>
+                                    </div>
+                                    <h5
+                                        class="h6 fw-bold mt-6 mt-lg-8 mt-xl-10 mb-4 mb-lg-6 clr-primary-10 reveal-text">
+                                        Dịch Vụ Tuyệt Vời Cho Trình Loại Bỏ Giọng Hát AI</h5>
+                                    <p class="mb-0 animate-text-from-right">@maccaw holy shit thiết kế ứng dụng reflect
+                                        thật tuyệt vời, khả năng viết và khả năng chiêm nghiệm của tôi đã tăng gấp 10
+                                        lần kể từ khi tôi sử dụng nó. đã sử dụng bear / notion trước đây nhưng sự đơn
+                                        giản của reflect thật đẹp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/testimonial-2-shade.png" alt="hình ảnh"
+                    class="img-fluid testimonial-section-2-el testimonial-section-2-el-shade">
+                <img src="assets/img/testimonial-2-el-1.webp" alt="hình ảnh"
+                    class="img-fluid testimonial-section-2-el testimonial-section-2-el-1">
+                <img src="assets/img/testimonial-2-el-2.webp" alt="hình ảnh"
+                    class="img-fluid testimonial-section-2-el testimonial-section-2-el-2">
+                <img src="assets/img/testimonial-2-el-3.webp" alt="hình ảnh"
+                    class="img-fluid testimonial-section-2-el testimonial-section-2-el-3">
+            </div>
+        </div>
+    </section>
+    <footer class="footer-5 section-space-sm-top pb-9">
+        <div class="container">
+            <div
+                class="footer-5-wrapper section-space-top bg-black rounded-5 px-5 px-sm-10 px-xl-12 px-xxl-20 pb-8 pb-xl-10 pb-xxl-12">
+                <div class="row gy-5 justify-content-xl-between">
+                    <div class="col-lg-12 col-xl-4">
+                        <a href="index-5.html">
+                            <img src="assets/img/logo-light.png" alt="logo" class="img-fluid">
+                        </a>
+                        <p class="clr-surface mt-8">Đăng ký nhận bản tin hàng tuần của chúng tôi</p>
+                        <form>
+                            <div class="newsletter-1 position-relative z-1 overflow-hidden rounded-1">
+                                <input type="email" name="#0"
+                                    class="form-control newsletter-1__input clr-white inverse-surface border-0 footer-5-newsletter-input rounded-1"
+                                    placeholder="tham gia cộng đồng">
+                            </div>
+                            <button type="submit"
+                                class="link py-3 px-5 bg-grad-4 rounded-1 fs-14 fw-bold text-center clr-white ff-1 d-inline-flex gap-2 align-items-center mt-2 border-0 mt-5">
+                                <span>Đăng ký</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2">
+                        <h5 class="inverse-on-surface fs-18 fw-bold mb-7">Tài nguyên</h5>
+                        <ul class="list gap-4">
+                            <li>
+                                <a href="blog-1.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Giới
+                                    thiệu </a>
+                            </li>
+                            <li>
+                                <a href="copywrite.html" class="link d-inline-block clr-neutral-80 :clr-primary-key">
+                                    Yêu cầu Truy cập API </a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Câu hỏi
+                                    thường gặp </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2">
+                        <h5 class="inverse-on-surface fs-18 fw-bold mb-7">Menu Nhanh</h5>
+                        <ul class="list gap-4">
+                            <li>
+                                <a href="featured.html" class="link d-inline-block clr-neutral-80 :clr-primary-key">
+                                    Tính năng </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Đăng
+                                    nhập </a>
+                            </li>
+                            <li>
+                                <a href="pricing.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Bảng
+                                    giá </a>
+                            </li>
+                            <li>
+                                <a href="register.html" class="link d-inline-block clr-neutral-80 :clr-primary-key">
+                                    Đăng ký </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2">
+                        <h5 class="inverse-on-surface fs-18 fw-bold mb-7">Tài nguyên</h5>
+                        <ul class="list gap-4">
+                            <li>
+                                <a href="use-cases.html" class="link d-inline-block clr-neutral-80 :clr-primary-key">
+                                    Trường hợp sử dụng </a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html"
+                                    class="link d-inline-block clr-neutral-80 :clr-primary-key"> Chính sách bảo mật </a>
+                            </li>
+                            <li>
+                                <a href="terms-service.html"
+                                    class="link d-inline-block clr-neutral-80 :clr-primary-key"> Điều khoản & Điều kiện
+                                </a>
+                            </li>
+                            <li>
+                                <a href="featured.html" class="link d-inline-block clr-neutral-80 :clr-primary-key">
+                                    Tính năng </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row gy-4 mt-12 align-items-center">
+                    <div class="col-lg-8">
+                        <p class="clr-neutral-80 mb-0 text-lg-start text-center">© Đã đăng ký Bản quyền <a
+                                href="https://doanminhkhang.vn/" class="clr-grad-7">Đoàn Minh Khang</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list list-row flex-wrap gap-3 justify-content-lg-end justify-content-center">
+                            <li>
+                                <a href="https://twitter.com/"
+                                    class="w-11 h-11 inverse-surface d-grid place-content-center rounded-circle clr-white :bg-grad-4">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/"
+                                    class="w-11 h-11 inverse-surface d-grid place-content-center rounded-circle clr-white :bg-grad-4">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com/"
+                                    class="w-11 h-11 inverse-surface d-grid place-content-center rounded-circle clr-white :bg-grad-4">
+                                    <i class="bi bi-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/"
+                                    class="w-11 h-11 inverse-surface d-grid place-content-center rounded-circle clr-white :bg-grad-4">
+                                    <i class="bi bi-behance"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/img/footer-5-wrapper-digit.png" alt="hình ảnh"
+                    class="img-fluid footer-5-wrapper-shape footer-5-wrapper-shape-digit">
+                <img src="assets/img/footer-5-wrapper-left.png" alt="hình ảnh"
+                    class="img-fluid footer-5-wrapper-shape footer-5-wrapper-shape-left">
+                <img src="assets/img/footer-5-wrapper-right.png" alt="hình ảnh"
+                    class="img-fluid footer-5-wrapper-shape footer-5-wrapper-shape-right">
+            </div>
+        </div>
+        <img src="assets/img/footer-5-left.png" alt="hình ảnh" class="img-fluid footer-5-shape footer-5-shape-left">
+        <img src="assets/img/footer-5-right.png" alt="hình ảnh" class="img-fluid footer-5-shape footer-5-shape-right">
+    </footer>
+    <!-- scrpts -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

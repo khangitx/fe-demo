@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DNU - AI">
+  <meta name="keywords" content="DNU - AI">
+  <meta name="author" content="DoanMinhKhang">
+  <title>DNU - AI</title>
+  <link rel="stylesheet" href="assets/css/fonts/ff-1.css">
+  <link rel="stylesheet" href="assets/css/fonts/ff-3.css">
+  <link rel="stylesheet" href="assets/css/fonts/bootstrap-icons.css">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="bg-black">
+  <!-- Custom Cursor  -->
+  <div class="custom-cursor">
+    <div>
+      <span></span>
+      <svg class="custom-cursor__img" width="119" height="45" viewBox="0 0 119 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1130_4828)">
+          <path d="M10.9627 22.9931L12.2909 16.1687C12.603 14.5633 14.1573 13.0107 15.7632 12.7011L21.5757 11.5778C23.181 11.2681 23.2911 10.4355 21.8214 9.719L2.95694 0.527836C1.48667 -0.188687 0.764833 0.470432 1.34397 1.99934L9.34853 23.1305C9.92766 24.6594 10.6501 24.5984 10.9627 22.9931Z" fill="url(#paint0_linear_1130_4828)" />
+        </g>
+        <rect x="16" y="16.2383" width="103" height="28" rx="4" fill="url(#paint1_linear_1130_4828)" />
+        <defs>
+          <linearGradient id="paint0_linear_1130_4828" x1="-58.0002" y1="-33.2617" x2="25.4638" y2="2.23919" gradientUnits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_1130_4828" x1="-53.2743" y1="34.7382" x2="110.992" y2="27.6664" gradientUnits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959" />
+          </linearGradient>
+          <clipPath id="clip0_1130_4828">
+            <rect width="24" height="24" fill="white" transform="translate(0 0.238281)" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div></div>
+  </div>
+  <!-- /Con trỏ tùy chỉnh  -->
+  <!-- bộ nạp trước -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="assets/img/preloader-img.png" alt="image">
+    </div>
+  </div>
+  <!-- bộ nạp trước kết thúc -->
+  <!-- Tiêu đề 5 -->
+  <div class="header-top pt-6 d-none d-lg-block transition position-absolute w-100 z-index-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+            <a href="#" class="link d-inline-block py-1 px-2 rounded secondary-fixed on-secondary-fixed-variant ff-1 fs-12 lh-1 fw-bold text-center flex-shrink-0"> Ưu đãi có hạn </a>
+            <span class="d-block ff-1 fs-12 fw-semibold clr-white"> Đăng ký và nhận chiết khấu 20% khi thanh toán. </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header header--7 header--fixed py-lg-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="menu d-lg-flex justify-content-lg-between align-items-lg-center py-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo link d-inline-flex align-items-center flex-shrink-0">
+                <img src="assets/img/logo-light.png" alt="logo" class="img-fluid object-fit-contain">
+              </a>
+              <button class="menu-toggle w-10 h-10 p-0 border-0 lh-1 bg-primary-50 clr-neutral-100 :clr-neutral-100 transition :bg-primary-300 rounded flex-shrink-0 d-lg-none order-sm-3 fs-24">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+            <div class="menu-nav d-flex align-items-lg-center flex-column flex-lg-row flex-grow-1 gap-4 pb-4 pb-lg-0 rounded">
+              <ul class="list list-lg-row mx-lg-auto rounded-pill align-items-center">
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub menu-link-active"> Trang chủ </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="index.html" class="link menu-sub-link gap-4">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-image-icon.png" alt="image" class="img-fluid">
+                        </span> Tạo Hình Ảnh AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-2.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-saas-icon.png" alt="image" class="img-fluid">
+                        </span> AI SaaS </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-3.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-chatbot-icon.png" alt="image" class="img-fluid">
+                        </span> AI Chatbot </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-4.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-content-icon.png" alt="image" class="img-fluid">
+                        </span> Trình Tạo Nội Dung AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-5.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-voice-icon.png" alt="image" class="img-fluid">
+                        </span> Tạo Giọng Nói AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-6.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-video-icon.png" alt="image" class="img-fluid">
+                        </span> Trình Tạo Video AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-7.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-saas-icon-2.png" alt="image" class="img-fluid">
+                        </span> DNU - AI </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list">
+                  <a href="pricing.html" class="link menu-link"> Bảng giá </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub"> Blog </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="blog-1.html" class="link menu-sub-link"> Danh sách Blog 1 </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="blog-2.html" class="link menu-sub-link"> Danh sách Blog 2 </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="blog-details.html" class="link menu-sub-link"> Chi tiết Blog </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub"> Trang </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="featured.html" class="link menu-sub-link"> Nổi bật </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="about.html" class="link menu-sub-link"> Giới thiệu </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="use-cases.html" class="link menu-sub-link"> Trường hợp sử dụng </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="copywrite.html" class="link menu-sub-link"> Bản quyền </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="faq.html" class="link menu-sub-link"> Câu hỏi thường gặp </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="d-inline-flex align-items-center menu-link h-select-link">
+                  <div class="h-select">
+                    <i class="bi bi-globe-americas"></i>
+                    <select>
+                      <option>VN</option>
+                      <option>EN</option>
+                      <option>RN</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="d-inline-flex align-items-center menu-link h-select-link">
+                  <div class="h-select">
+                    <i class="bi bi-currency-dollar"></i>
+                    <select>
+                      <option>Vnd</option>
+                      <option>Usd</option>
+                      <option>Rup</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list list-lg-row gap-4 gap-lg-6 rounded-pill py-lg-2 px-lg-3">
+                <li class="menu-list mx-4 mx-lg-0">
+                  <a href="login.html" class="link d-inline-flex justify-content-center py-2 px-4 border border-neutral-30 :border-primary-30 :bg-primary-30
+                                     rounded-pill fs-14 fw-bold text-center clr-white"> Đăng nhập </a>
+                </li>
+                <li class="menu-list mx-4 mx-lg-0">
+                  <a href="register.html" class="link d-inline-flex justify-content-center align-items-center gap-2 py-2 px-4 border border-primary-key :border-primary-30 bg-primary-key :bg-primary-30 rounded-pill fs-14 fw-bold text-center clr-white">
+                    <span class="d-block"> Đăng ký </span>
+                    <span class="d-block fs-10">
+                      <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header 5 -->
+  <!-- Hero 7 -->
+  <section class="hero-7 section-space-bottom">
+    <div class="section-space-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h3 class="clr-white text-center position-relative z-index-1 mb-8 animate-line-3d"> Mở Khóa Sức Mạnh Của AI </h3>
+            <div class="d-flex flex-wrap gap-6 justify-content-center align-items-center position-relative z-index-1 fadeIn_bottom">
+              <a href="register.html" class="link d-inline-flex justify-content-center align-items-center gap-2 py-4 px-6 border border-primary-key :border-primary-30 bg-primary-key :bg-primary-30 rounded-1 fw-bold clr-white :arrow-btn">
+                <span>Bắt đầu ngay</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="login.html" class="link d-inline-flex justify-content-center align-items-center gap-2 py-4 px-6 border border-primary-key :border-primary-30 :bg-primary-30 rounded-1 fw-bold clr-white :arrow-btn">
+                <span>Tải xuống ngay</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-7-circle-wrapper">
+      <div class="hero-7-circle hero-7-circle-one"></div>
+      <div class="hero-7-circle hero-7-circle-two"></div>
+      <div class="hero-7-circle hero-7-circle-three"></div>
+      <div class="hero-7-radar">
+        <div class="animated-text-wrapper">
+          <p class="cd-headline slide mb-0">
+            <span class="cd-words-wrapper">
+              <b class="is-visible">DNU - AI</b>
+              <b>DNU - AI</b>
+              <b>DNU - AI</b>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="hero-7-logo-wrapper d-flex justify-content-center align-items-center">
+        <img src="assets/img/hero-7-logo.png" alt="image" class="img-fluid hero-7-logo">
+      </div>
+    </div>
+    <div class="hero-7-video-main">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="hero-7-video-wrapper">
+              <div class="hero-7-video-wrapper-inner">
+                <video controls autoplay muted loop class="w-100 h-100">
+                  <source src="assets/img/wirtebot-video.mp4" type="video/mp4"> Trình duyệt của bạn không hỗ trợ thẻ video. 
+                </video>
+              </div>
+              <img src="assets/img/hero-7-video-frame.png" alt="image" class="img-fluid hero-7-video-frame">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-7-main-cirlce">
+      <div class="hero-7-main-cirlce-left"></div>
+      <div class="hero-7-main-cirlce-right"></div>
+    </div>
+    <img src="assets/img/hero-7-top-line.png" alt="image" class="img-fluid hero-7-shape hero-7-shape-top-line">
+    <img src="assets/img/hero-7-top-dots.png" alt="image" class="img-fluid hero-7-shape hero-7-shape-top-dots">
+    <img src="assets/img/hero-7-ai-feature-text.png" alt="image" class="img-fluid hero-7-shape hero-7-shape-text">
+  </section>
+  <!-- /Hero 7 -->
+  <!-- Feature section -->
+  <section class="feature-section-2 section-space-top section-space-bottom home-7-section-top-border">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">Danh sách tính năng của DNU - AI</h3>
+          </div>
+          <ul class="nav nav-tabs feature-2-tabs justify-content-center py-4 px-6 mt-12 fadeIn_bottom" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="feature-1-tab" data-bs-toggle="tab" data-bs-target="#feature-1-tab-pane" type="button" role="tab" aria-controls="feature-1-tab-pane" aria-selected="true">
+                <i class="bi bi-stars"></i>
+                <span class="nav-link-text">AI Thông Minh Hoạt Động</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="feature-2-tab" data-bs-toggle="tab" data-bs-target="#feature-2-tab-pane" type="button" role="tab" aria-controls="feature-2-tab-pane" aria-selected="false">
+                <i class="bi bi-images"></i>
+                <span class="nav-link-text">Hình Ảnh AI</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="feature-3-tab" data-bs-toggle="tab" data-bs-target="#feature-3-tab-pane" type="button" role="tab" aria-controls="feature-3-tab-pane" aria-selected="false">
+                <i class="bi bi-textarea-t"></i>
+                <span class="nav-link-text">Nội Dung AI</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="feature-4-tab" data-bs-toggle="tab" data-bs-target="#feature-4-tab-pane" type="button" role="tab" aria-controls="feature-4-tab-pane" aria-selected="false">
+                <i class="bi bi-music-note-beamed"></i>
+                <span class="nav-link-text">Âm Nhạc AI</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="feature-5-tab" data-bs-toggle="tab" data-bs-target="#feature-5-tab-pane" type="button" role="tab" aria-controls="feature-5-tab-pane" aria-selected="false">
+                <i class="bi bi-code-slash"></i>
+                <span class="nav-link-text">Mã AI</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="feature-6-tab" data-bs-toggle="tab" data-bs-target="#feature-6-tab-pane" type="button" role="tab" aria-controls="feature-6-tab-pane" aria-selected="false">
+                <i class="bi bi-play-circle-fill"></i>
+                <span class="nav-link-text">Video AI</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-24">
+        <div class="tab-content feature-2-tab-content">
+          <div class="tab-pane fade show active" id="feature-1-tab-pane" role="tabpanel" aria-labelledby="feature-1-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card fadein_bottom_36">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-1.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Nhà Thiết Kế Năng Lượng Ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card fadein_bottom_36">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-2.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Phát Triển Doanh Nghiệp Của Bạn</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card fadein_bottom_36">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-3.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Sử Dụng Ai GitHub Copilot</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card fadein_bottom_36">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-4.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Dễ dàng Sử Dụng Open ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big fadein_bottom_37">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-5.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big fadein_bottom_37">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-6.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="feature-2-tab-pane" role="tabpanel" aria-labelledby="feature-2-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-1.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Nhà Thiết Kế Năng Lượng Ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-2.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Phát Triển Doanh Nghiệp Của Bạn</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-3.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Sử Dụng Ai GitHub Copilot</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-4.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Dễ dàng Sử Dụng Open ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="feature-3-tab-pane" role="tabpanel" aria-labelledby="feature-3-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-5.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-6.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="feature-4-tab-pane" role="tabpanel" aria-labelledby="feature-4-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-4 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-1.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Nhà Thiết Kế Năng Lượng Ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-2.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Phát Triển Doanh Nghiệp Của Bạn</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-3.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Sử Dụng Ai GitHub Copilot</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="feature-5-tab-pane" role="tabpanel" aria-labelledby="feature-5-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-1.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Nhà Thiết Kế Năng Lượng Ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-2.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Phát Triển Doanh Nghiệp Của Bạn</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-3.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Sử Dụng Ai GitHub Copilot</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="feature-2-card">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-4.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Dễ dàng Sử Dụng Open ai</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">Robot chạy bằng AI có thể thực hiện các tác vụ dựa trên quy tắc trong kinh doanh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="feature-6-tab-pane" role="tabpanel" aria-labelledby="feature-6-tab" tabindex="0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-5.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-2-card style-big">
+                  <figure class="feature-2-card-thumb mb-0">
+                    <img src="assets/img/feature-2-6.webp" alt="image" class="img-fluid">
+                    <i class="bi bi-stars"></i>
+                  </figure>
+                  <div class="feature-2-card-content text-center">
+                    <h4 class="fs-16 fw-extrabold clr-neutral-90 title">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                    <p class="fs-14 mb-0 clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các đề xuất được cá nhân hóa, chẳng hạn như những đề xuất phát trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/feature-2-top.png" alt="image" class="img-fluid feature-2-top-shape">
+    <img src="assets/img/feature-2-shape-1.png" alt="image" class="img-fluid feature-2-shape feature-2-shape-1">
+    <img src="assets/img/feature-2-shape-2.png" alt="image" class="img-fluid feature-2-shape feature-2-shape-2">
+    <img src="assets/img/feature-2-shape-3.png" alt="image" class="img-fluid feature-2-shape feature-2-shape-3">
+    <img src="assets/img/feature-2-shape-4.png" alt="image" class="img-fluid feature-2-shape feature-2-shape-4">
+  </section>
+  <!-- /Feature section -->
+  <!-- AI Tools Section -->
+  <section class="ai-tools-section section-space-top home-7-section-top-border">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">Công Cụ DNU - AI.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="row gy-4">
+              <div class="col-lg-12 col-md-6">
+                <div class="ai-tools-card text-center overflow-hidden py-10 px-8 h-100 fadeIn_bottom" data-tilt data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.15">
+                  <img src="assets/img/ai-tools-card-img-1.png" alt="image" class="img-fluid mt-2 mb-5 img-gray">
+                  <h4 class="clr-neutral-90 fs-18 fw-semibold">Bảng điều khiển nâng cao</h4>
+                  <p class="clr-neutral-80 mb-0">Công cụ dịch thuật chạy bằng AI Tiết kiệm mỗi ngày cho việc quản lý quảng cáo</p>
+                  <img src="assets/img/ai-tools-card-shape-1.png" alt="image" class="img-fluid ai-tools-card-shape">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="ai-tools-card text-center overflow-hidden py-6 px-8 h-100 fadeIn_bottom" data-tilt data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.15">
+                  <img src="assets/img/ai-tools-card-img-2.png" alt="image" class="img-fluid">
+                  <h4 class="clr-neutral-90 fs-18 fw-semibold">Bảng điều khiển nâng cao</h4>
+                  <p class="clr-neutral-80 mb-0">Công cụ dịch thuật chạy bằng AI Tiết kiệm mỗi ngày cho việc quản lý quảng cáo</p>
+                  <img src="assets/img/ai-tools-card-shape-2.png" alt="image" class="img-fluid ai-tools-card-shape">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="ai-tools-card text-center overflow-hidden py-10 px-8 h-100 fadeIn_bottom" data-tilt data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="mt-2 mb-10 ai-tools-card-globe">
+                <img src="assets/img/ai-tools-card-img-3-globe.png" alt="image" class="img-fluid">
+                <img src="assets/img/ai-tools-card-img-3-flag.png" alt="image" class="img-fluid ai-tools-card-flag">
+              </div>
+              <h4 class="clr-neutral-90 fs-18 fw-semibold">Bảng điều khiển nâng cao</h4>
+              <p class="clr-neutral-80 mb-0">Công cụ dịch thuật chạy bằng AI Tiết kiệm mỗi ngày cho việc quản lý quảng cáo</p>
+              <img src="assets/img/ai-tools-card-shape-3.png" alt="image" class="img-fluid ai-tools-card-shape">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row gy-4">
+              <div class="col-lg-12 col-md-6">
+                <div class="ai-tools-card text-center overflow-hidden py-6 px-8 h-100 fadeIn_bottom" data-tilt data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.15">
+                  <img src="assets/img/ai-tools-card-img-4.png" alt="image" class="img-fluid mb-8">
+                  <h4 class="clr-neutral-90 fs-18 fw-semibold">Bảng điều khiển nâng cao</h4>
+                  <p class="clr-neutral-80 mb-0">Công cụ dịch thuật chạy bằng AI Tiết kiệm mỗi ngày cho việc quản lý quảng cáo</p>
+                  <img src="assets/img/ai-tools-card-shape-4.png" alt="image" class="img-fluid ai-tools-card-shape">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="ai-tools-card text-center overflow-hidden py-6 px-8 h-100 fadeIn_bottom" data-tilt data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.15">
+                  <img src="assets/img/ai-tools-card-img-5.png" alt="image" class="img-fluid mb-8">
+                  <h4 class="clr-neutral-90 fs-18 fw-semibold">Bảng điều khiển nâng cao</h4>
+                  <p class="clr-neutral-80 mb-0">Công cụ dịch thuật chạy bằng AI Tiết kiệm mỗi ngày cho việc quản lý quảng cáo</p>
+                  <img src="assets/img/ai-tools-card-shape-5.png" alt="image" class="img-fluid ai-tools-card-shape">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/ai-tools-top-shape.png" alt="image" class="img-fluid ai-tools-section-top-shape">
+    <img src="assets/img/ai-tools-shape-top-right.png" alt="image" class="img-fluid ai-tools-section-top-right-shape">
+    <img src="assets/img/ai-tools-shape-left.png" alt="image" class="img-fluid ai-tools-section-left-shape">
+    <img src="assets/img/ai-tools-shape-bottom.png" alt="image" class="img-fluid ai-tools-section-bottom-shape">
+    <img src="assets/img/ai-tools-shape-bottom-layer.png" alt="image" class="img-fluid ai-tools-section-bottom-layer-shape">
+    <img src="assets/img/ai-tools-shape-left-start.png" alt="image" class="img-fluid ai-tools-section-left-start parallax">
+    <img src="assets/img/ai-tools-shape-right-start.png" alt="image" class="img-fluid ai-tools-section-right-start parallax">
+  </section>
+  <!-- /AI Tools Section -->
+  <!-- AI Template Section -->
+  <section class="ai-template-section section-space-top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">Mẫu</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">Mẫu AI</h3>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-tabs ai-temaplate-tabs justify-content-center gap-3 gap-xl-4 rounded-1 border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active clr-neutral-90" id="ai-template-1-tab" data-bs-toggle="tab" data-bs-target="#ai-template-1-tab-pane" type="button" role="tab" aria-controls="ai-template-1-tab-pane" aria-selected="true"><i class="bi bi-bookmarks-fill"></i> Tất cả</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-2-tab" data-bs-toggle="tab" data-bs-target="#ai-template-2-tab-pane" type="button" role="tab" aria-controls="ai-template-2-tab-pane" aria-selected="false"><i class="bi bi-newspaper"></i> Blog</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-3-tab" data-bs-toggle="tab" data-bs-target="#ai-template-3-tab-pane" type="button" role="tab" aria-controls="ai-template-3-tab-pane" aria-selected="false"><i class="bi bi-cart2"></i> Thương mại điện tử</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-4-tab" data-bs-toggle="tab" data-bs-target="#ai-template-4-tab-pane" type="button" role="tab" aria-controls="ai-template-4-tab-pane" aria-selected="false"><i class="bi bi-code-square"></i> Phát triển</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-5-tab" data-bs-toggle="tab" data-bs-target="#ai-template-5-tab-pane" type="button" role="tab" aria-controls="ai-template-5-tab-pane" aria-selected="false"><i class="bi bi-gear"></i> Quảng cáo</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-6-tab" data-bs-toggle="tab" data-bs-target="#ai-template-6-tab-pane" type="button" role="tab" aria-controls="ai-template-6-tab-pane" aria-selected="false"><i class="bi bi-chat-dots"></i> Truyền thông xã hội</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-7-tab" data-bs-toggle="tab" data-bs-target="#ai-template-7-tab-pane" type="button" role="tab" aria-controls="ai-template-7-tab-pane" aria-selected="false"><i class="bi bi-tiktok"></i> TikTok</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-8-tab" data-bs-toggle="tab" data-bs-target="#ai-template-8-tab-pane" type="button" role="tab" aria-controls="ai-template-8-tab-pane" aria-selected="false"><i class="bi bi-mailbox2"></i> Email</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-9-tab" data-bs-toggle="tab" data-bs-target="#ai-template-9-tab-pane" type="button" role="tab" aria-controls="ai-template-9-tab-pane" aria-selected="false"><i class="bi bi-megaphone"></i> Tiếp thị</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-10-tab" data-bs-toggle="tab" data-bs-target="#ai-template-10-tab-pane" type="button" role="tab" aria-controls="ai-template-10-tab-pane" aria-selected="false"><i class="bi bi-soundwave"></i> Lồng tiếng</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-11-tab" data-bs-toggle="tab" data-bs-target="#ai-template-11-tab-pane" type="button" role="tab" aria-controls="ai-template-11-tab-pane" aria-selected="false"><i class="bi bi-display"></i> Nội dung trang web</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-12-tab" data-bs-toggle="tab" data-bs-target="#ai-template-12-tab-pane" type="button" role="tab" aria-controls="ai-template-12-tab-pane" aria-selected="false"><i class="bi bi-nintendo-switch"></i> Vui vẻ hoặc trích dẫn</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-13-tab" data-bs-toggle="tab" data-bs-target="#ai-template-13-tab-pane" type="button" role="tab" aria-controls="ai-template-13-tab-pane" aria-selected="false"><i class="bi bi-journal-code"></i> Trung bình</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-14-tab" data-bs-toggle="tab" data-bs-target="#ai-template-14-tab-pane" type="button" role="tab" aria-controls="ai-template-14-tab-pane" aria-selected="false"><i class="bi bi-instagram"></i> Instagram</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-15-tab" data-bs-toggle="tab" data-bs-target="#ai-template-15-tab-pane" type="button" role="tab" aria-controls="ai-template-15-tab-pane" aria-selected="false"><i class="bi bi-emoji-smile"></i> Câu chuyện thành công</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link clr-neutral-90" id="ai-template-16-tab" data-bs-toggle="tab" data-bs-target="#ai-template-16-tab-pane" type="button" role="tab" aria-controls="ai-template-16-tab-pane" aria-selected="false"><i class="bi bi-cursor"></i> Công cụ SEO</button>
+              </li>
+            </ul>
+            <div class="tab-content mt-6" id="myTabContent">
+              <div class="tab-pane fade show active" id="ai-template-1-tab-pane" role="tabpanel" aria-labelledby="ai-template-1-tab" tabindex="0">
+                <div id="ai-template-card-wrapper">
+                  <div class="row gy-4">
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3 ai-template-card-item">
+                      <div class="ai-template-card text-center text-xl-start">
+                        <div class="ai-template-card-icon">
+                          <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                        <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" id="seeMore" class="link py-3 px-6 border border-primary-key :border-primary-30 bg-primary-key :bg-primary-30 rounded-1 fw-bold clr-white mx-auto align-items-center gap-2 :arrow-btn"> Xem thêm <i class="bi bi-arrow-right"></i>
+                  </button>
+                  <div class="ai-template-card-wrapper-overlay"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-2-tab-pane" role="tabpanel" aria-labelledby="ai-template-2-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-3-tab-pane" role="tabpanel" aria-labelledby="ai-template-3-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-4-tab-pane" role="tabpanel" aria-labelledby="ai-template-4-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14"> AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-5-tab-pane" role="tabpanel" aria-labelledby="ai-template-5-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-6-tab-pane" role="tabpanel" aria-labelledby="ai-template-6-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-7-tab-pane" role="tabpanel" aria-labelledby="ai-template-7-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-8-tab-pane" role="tabpanel" aria-labelledby="ai-template-8-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-9-tab-pane" role="tabpanel" aria-labelledby="ai-template-9-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-10-tab-pane" role="tabpanel" aria-labelledby="ai-template-10-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-11-tab-pane" role="tabpanel" aria-labelledby="ai-template-11-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-12-tab-pane" role="tabpanel" aria-labelledby="ai-template-12-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-13-tab-pane" role="tabpanel" aria-labelledby="ai-template-13-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-14-tab-pane" role="tabpanel" aria-labelledby="ai-template-14-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-15-tab-pane" role="tabpanel" aria-labelledby="ai-template-15-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai-template-16-tab-pane" role="tabpanel" aria-labelledby="ai-template-16-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 col-xxl-3">
+                    <div class="ai-template-card text-center text-xl-start">
+                      <div class="ai-template-card-icon">
+                        <i class="bi bi-stars"></i>
+                      </div>
+                      <h4 class="clr-neutral-90 fs-18 mt-6">Mã hóa AI</h4>
+                      <p class="clr-neutral-80 mb-0 fs-14">AI giúp bạn viết mã nhanh hơn, hiệu quả và không có lỗi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <img src="assets/img/ai-template-bottom-img.png" alt="image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/ai-template-shape-left.png" alt="image" class="img-fluid ai-template-section-shape ai-template-section-shape-left">
+  </section>
+  <!-- /AI Template Section -->
+  <!-- AI Image Section -->
+  <section class="ai-image-section section-space-top section-space-bottom home-7-section-top-border">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">Hình ảnh AI tạo ra</h3>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <div class="row justify-content-center gy-4">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="feature-2-card style-two fadein_bottom_38">
+              <figure class="feature-2-card-thumb mb-0">
+                <img src="assets/img/ai-image-card-1.png" alt="image" class="img-fluid">
+                <i class="bi bi-stars"></i>
+              </figure>
+              <div class="feature-2-card-content text-center">
+                <h4 class="fs-16 fw-extrabold clr-neutral-90 reveal-text">Hình ảnh Midjourney</h4>
+                <p class="fs-14 mb-0 animate-text-from-bottom clr-neutral-80">Robot chạy bằng AI có thể thực hiện các nhiệm vụ dựa trên quy tắc trong kinh doanh</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-4 col-md-6">
+            <div class="feature-2-card style-big style-two fadein_bottom_38">
+              <figure class="feature-2-card-thumb mb-0">
+                <img src="assets/img/ai-image-card-2.png" alt="image" class="img-fluid">
+                <i class="bi bi-stars"></i>
+              </figure>
+              <div class="feature-2-card-content text-center">
+                <h4 class="fs-16 fw-extrabold clr-neutral-90 reveal-text">Lặp lại trên các thiết kế để mở khóa các khả năng mới</h4>
+                <p class="fs-14 mb-0 max-text-40 mx-auto animate-text-from-bottom clr-neutral-80">AI có thể phân tích hành vi của người dùng để cung cấp các khuyến nghị được cá nhân hóa, chẳng hạn như các đề xuất phát trực tuyến</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="feature-2-card style-two fadein_bottom_38">
+              <figure class="feature-2-card-thumb mb-0">
+                <img src="assets/img/ai-image-card-3.png" alt="image" class="img-fluid">
+                <i class="bi bi-stars"></i>
+              </figure>
+              <div class="feature-2-card-content text-center">
+                <h4 class="fs-16 fw-extrabold clr-neutral-90 reveal-text">AI Power Designer</h4>
+                <p class="fs-14 mb-0 animate-text-from-bottom clr-neutral-80">Robot chạy bằng AI có thể thực hiện các nhiệm vụ dựa trên quy tắc trong kinh doanh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ai-image-slider-wrapper">
+              <div class="scroller-x mb-4" data-direction="right" data-speed="slow" data-animated="true">
+                <ul class="list list-row gap-4 scroller-x__list">
+                  <li>
+                    <img src="assets/img/ai-image-slide-1.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-2.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-3.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-4.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-5.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-6.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-7.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                </ul>
+              </div>
+              <div class="scroller-x mb-4" data-direction="left" data-speed="slow" data-animated="true">
+                <ul class="list list-row gap-4 scroller-x__list">
+                  <li>
+                    <img src="assets/img/ai-image-slide-8.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-9.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-10.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-11.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-12.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-13.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-14.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                </ul>
+              </div>
+              <div class="scroller-x mb-4" data-direction="right" data-speed="slow" data-animated="true">
+                <ul class="list list-row gap-4 scroller-x__list">
+                  <li>
+                    <img src="assets/img/ai-image-slide-15.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-16.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-1.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-2.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-3.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-2.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-4.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                  <li>
+                    <img src="assets/img/ai-image-slide-5.png" alt="image" class="img-fluid rounded-1">
+                  </li>
+                </ul>
+              </div>
+              <img src="assets/img/ai-image-slide-overlay.png" alt="image" class="img-fluid ai-image-slide-overlay">
+              <div class="radar-logo-wrapper">
+                <div class="radar">
+                  <div class="animated-text-wrapper">
+                    <p class="cd-headline slide mb-0">
+                      <span class="cd-words-wrapper">
+                        <b class="is-visible">DNU - AI</b>
+                        <b>DNU - AI</b>
+                        <b>DNU - AI</b>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="logo-wrapper d-flex justify-content-center align-items-center">
+                  <img src="assets/img/hero-7-logo.png" alt="image" class="img-fluid hero-7-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/ai-image-shape-top.png" alt="image" class="img-fluid ai-image-section-shape ai-image-section-shape-top">
+    <img src="assets/img/ai-image-shape-left.png" alt="image" class="img-fluid ai-image-section-shape ai-image-section-shape-left">
+    <img src="assets/img/ai-image-shape-right.png" alt="image" class="img-fluid ai-image-section-shape ai-image-section-shape-right">
+  </section>
+  <!-- /AI Image Section -->
+  <!-- Pricing Section -->
+  <section class="pricing-section-5 section-space-top section-space-sm-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">DNU - AI Kế hoạch đăng ký</h3>
+          </div>
+        </div>
+      </div>
+      <div class="pricing- mt-10 d-flex justify-content-center">
+        <ul class="pricing-5-list list list-sm-row align-items-center gap-3 fadeIn_bottom">
+          <li class="pricing-btn-5 active">
+            <button type="button" class="link d-inline-flex py-2 px-3 fs-12 fw-bold clr-neutral-70 border-0 bg-transparent" id="selectMonthly">Hàng tháng</button>
+          </li>
+          <li class="pricing-btn-5">
+            <button type="button" class="link d-inline-flex py-2 px-3 fs-12 fw-bold clr-neutral-70 border-0 bg-transparent" id="selectYearly">Hàng năm</button>
+          </li>
+          <li class="pricing-btn-5">
+            <button type="button" class="link d-inline-flex py-2 px-3 fs-12 fw-bold clr-neutral-70 border-0 bg-transparent" id="selectLifetime">Cả đời</button>
+          </li>
+          <li class="pricing-btn-5">
+            <button type="button" class="link d-inline-flex py-2 px-3 fs-12 fw-bold clr-neutral-70 border-0 bg-transparent" id="selectPrepaid">Trả trước</button>
+          </li>
+          <li class="pricing-btn-5">
+            <span class="d-inline-flex py-2 px-3 fs-12 fw-bold clr-white bg-primary-key rounded-1">Giảm 20% hàng năm</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-10">
+        <div class="row gy-4">
+          <div class="col-sm-6 col-lg-4 col-xxl-3 fadein_bottom_39">
+            <div class="pricing-5-card text-center">
+              <span class="pricing-5-card-name fs-16 fw-bold clr-neutral-90">Khởi đầu</span>
+              <p class="fs-14 clr-neutral-80 mt-3">Bắt đầu với giới hạn 3.000 từ</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <h3 class="pricing-5-card-price fw-extrabold mb-0 clr-neutral-90">
+                  <span class="monthly-price">20.000 Vnd</span>
+                  <span class="yearly-price">40.000 Vnd</span>
+                  <span class="lifetime-price">60.000 Vnd</span>
+                  <span class="prepaid-price">800.000 Vnd</span>
+                </h3>
+                <div class="text-start">
+                  <span class="pricing-5-card-discount">20%</span>
+                  <p class="fs-12 fw-semibold clr-neutral-40 mb-0 mt-1">Mỗi của tôi</p>
+                </div>
+              </div>
+              <ul class="list gap-4 mt-8">
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">25 tin nhắn miễn phí</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">1 chatbot</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Mô hình cơ bản</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">100 liên hệ bị bắt</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Hỗ trợ cơ bản</span>
+                  </div>
+                </li>
+              </ul>
+              <a href="pricing.html" class="link pricing-5-card-btn py-2 px-4 fs-14 clr-neutral-80 d-inline-flex align-items-center gap-2 rounded-1 border border-neutral-80 mt-10">Thử miễn phí <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 fadein_bottom_39">
+            <div class="pricing-5-card popular text-center">
+              <span class="pricing-5-card-name fs-16 fw-bold clr-neutral-90">Phổ biến</span>
+              <p class="fs-14 clr-neutral-80 mt-3">Bắt đầu với giới hạn 3.000 từ</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <h3 class="pricing-5-card-price fw-extrabold mb-0 clr-neutral-90">
+                  <span class="monthly-price">32.000 Vnd</span>
+                  <span class="yearly-price">120.000 Vnd</span>
+                  <span class="lifetime-price">1.400.000 Vnd</span>
+                  <span class="prepaid-price">800.000 Vnd</span>
+                </h3>
+                <div class="text-start">
+                  <span class="pricing-5-card-discount">20%</span>
+                  <p class="fs-12 fw-semibold clr-neutral-40 mb-0 mt-1">Mỗi của tôi</p>
+                </div>
+              </div>
+              <ul class="list gap-4 mt-8">
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">25 tin nhắn miễn phí</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">1 chatbot</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Mô hình cơ bản</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">100 liên hệ bị bắt</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Hỗ trợ cơ bản</span>
+                  </div>
+                </li>
+              </ul>
+              <a href="pricing.html" class="link pricing-5-card-btn py-2 px-4 fs-14 clr-neutral-80 d-inline-flex align-items-center gap-2 rounded-1 border border-neutral-80 mt-10">Thử miễn phí <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 fadein_bottom_39">
+            <div class="pricing-5-card text-center">
+              <span class="pricing-5-card-name fs-16 fw-bold clr-neutral-90">Phần thưởng</span>
+              <p class="fs-14 clr-neutral-80 mt-3">Bắt đầu với giới hạn 3.000 từ</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <h3 class="pricing-5-card-price fw-extrabold mb-0 clr-neutral-90">
+                  <span class="monthly-price">480.000 Vnd</span>
+                  <span class="yearly-price">1.600.000 Vnd</span>
+                  <span class="lifetime-price">1.800.000 Vnd</span>
+                  <span class="prepaid-price">1.200.000 Vnd</span>
+                </h3>
+                <div class="text-start">
+                  <span class="pricing-5-card-discount">20%</span>
+                  <p class="fs-12 fw-semibold clr-neutral-40 mb-0 mt-1">Mỗi của tôi</p>
+                </div>
+              </div>
+              <ul class="list gap-4 mt-8">
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">25 tin nhắn miễn phí</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">1 chatbot</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Mô hình cơ bản</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">100 liên hệ bị bắt</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Hỗ trợ cơ bản</span>
+                  </div>
+                </li>
+              </ul>
+              <a href="pricing.html" class="link pricing-5-card-btn py-2 px-4 fs-14 clr-neutral-80 d-inline-flex align-items-center gap-2 rounded-1 border border-neutral-80 mt-10">Thử miễn phí <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 fadein_bottom_39">
+            <div class="pricing-5-card text-center">
+              <span class="pricing-5-card-name fs-16 fw-bold clr-neutral-90">Doanh nghiệp</span>
+              <p class="fs-14 clr-neutral-variant-80 mt-3">Bắt đầu với giới hạn 3.000 từ</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <h3 class="pricing-5-card-price fw-extrabold mb-0 clr-neutral-90">
+                  <span class="monthly-price">1.800.000 Vnd</span>
+                  <span class="yearly-price">2.400.000 Vnd</span>
+                  <span class="lifetime-price">6.000.000 Vnd</span>
+                  <span class="prepaid-price">1.600.000 Vnd</span>
+                </h3>
+                <div class="text-start">
+                  <span class="pricing-5-card-discount">20%</span>
+                  <p class="fs-12 fw-semibold clr-neutral-40 mb-0 mt-1">Mỗi của tôi</p>
+                </div>
+              </div>
+              <ul class="list gap-4 mt-8">
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">25 tin nhắn miễn phí</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">1 Chatbot</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Mô hình cơ bản</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">100 liên hệ bị bắt</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="flex-shrink-0 d-grid place-content-center w-4 h-4 rounded-circle border border-neutral-30 clr-neutral-80 fs-10">
+                      <i class="bi bi-check2 mt-1"></i>
+                    </span>
+                    <span class="d-block fs-14 clr-neutral-80 fw-medium">Hỗ trợ cơ bản</span>
+                  </div>
+                </li>
+              </ul>
+              <a href="pricing.html" class="link pricing-5-card-btn py-2 px-4 fs-14 clr-neutral-80 d-inline-flex align-items-center gap-2 rounded-1 border border-neutral-80 mt-10">Thử miễn phí<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/pricing-section-5-shape-top.png" alt="image" class="img-fluid pricing-section-5-shape pricing-section-5-shape-top">
+    <img src="assets/img/pricing-section-5-shape-left.png" alt="image" class="img-fluid pricing-section-5-shape pricing-section-5-shape-left">
+    <img src="assets/img/pricing-section-5-shape-right.png" alt="image" class="img-fluid pricing-section-5-shape pricing-section-5-shape-right">
+  </section>
+  <!-- /Pricing Section -->
+  <!-- AI Application Section -->
+  <section class="ai-application-section section-space-sm-top section-space-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-xxl-5">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">Một ứng dụng nhiều nền tảng AI</h3>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 ai-application-item-wrapper">
+        <div class="row gy-4 align-items-center justify-content-center">
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="ai-app-item text-center fadeIn_bottom">
+              <img src="assets/img/ai-application-icon-1.png" alt="image" class="img-fluid">
+              <h4 class="fs-18 fw-bold clr-neutral-90 mt-4 mb-3">Thông tin Twilio</h4>
+              <p class="mb-0 clr-neutral-80">Kết nối với phản ánh với hàng tá ứng dụng không có mã</p>
+            </div>
+            <div class="ai-app-item text-center fadeIn_bottom">
+              <img src="assets/img/ai-application-icon-3.png" alt="image" class="img-fluid">
+              <h4 class="fs-18 fw-bold clr-neutral-90 mt-4 mb-3">Cài đặt giọng nói</h4>
+              <p class="mb-0 clr-neutral-80">Kết nối với phản ánh với hàng tá ứng dụng không có mã</p>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-lg-4 col-xxl-3 fadeIn_bottom">
+            <div class="radar-logo-wrapper">
+              <div class="radar">
+                <div class="animated-text-wrapper">
+                  <p class="cd-headline slide mb-0">
+                    <span class="cd-words-wrapper">
+                      <b class="is-visible">DNU - AI</b>
+                      <b>DNU - AI</b>
+                      <b>DNU - AI</b>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="logo-wrapper d-flex justify-content-center align-items-center">
+                <img src="assets/img/hero-7-logo.png" alt="image" class="img-fluid hero-7-logo">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="ai-app-item text-center fadeIn_bottom">
+              <img src="assets/img/ai-application-icon-2.png" alt="image" class="img-fluid">
+              <h4 class="fs-18 fw-bold clr-neutral-90 mt-4 mb-3">Cấu hình đăng nhập xã hội</h4>
+              <p class="mb-0 clr-neutral-80">Kết nối với phản ánh với hàng tá ứng dụng không có mã</p>
+            </div>
+            <div class="ai-app-item text-center fadeIn_bottom">
+              <img src="assets/img/ai-application-icon-4.png" alt="image" class="img-fluid">
+              <h4 class="fs-18 fw-bold clr-neutral-90 mt-4 mb-3">Quản lý lưu trữ</h4>
+              <p class="mb-0 clr-neutral-80">Kết nối với phản ánh với hàng tá ứng dụng không có mã</p>
+            </div>
+          </div>
+        </div>
+        <img src="assets/img/ai-application-shape-center.png" alt="image" class="img-fluid ai-application-shape-center">
+      </div>
+    </div>
+    <img src="assets/img/ai-application-shape-line-left.png" alt="image" class="img-fluid ai-application-shape ai-application-shape-left">
+    <img src="assets/img/ai-application-shape-line-right.png" alt="image" class="img-fluid ai-application-shape ai-application-shape-right">
+  </section>
+  <!-- /AI Application Section -->
+  <!-- Testimonial Section -->
+  <section class="testimonial-section-4 section-space-top section-space-sm-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xxl-7">
+          <div class="text-center">
+            <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+            <h3 class="clr-neutral-90 fw-bold animate-line-3d">DNU - AI được các nhà tư tưởng yêu thích</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10">
+      <div class="scroller-x mb-4" data-direction="right" data-speed="slow" data-animated="true">
+        <ul class="list list-row gap-4 scroller-x__list">
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-1.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Nhà thiết kế</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-2.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Nhà thiết kế</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-3.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Nhà thiết kế</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-4.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-1.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Nhà thiết kế</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-2.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Nhà thiết kế </span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="scroller-x mb-4" data-direction="left" data-speed="slow" data-animated="true">
+        <ul class="list list-row gap-4 scroller-x__list">
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-1.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-2.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-3.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-4.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-1.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-4-card py-10 px-9">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <img src="assets/img/testimonial-4-avatar-2.png" alt="image" class="img-fluid w-11 h-11 object-fit-cover rounded-circle">
+                <div>
+                  <h5 class="clr-neutral-90 fs-18 mb-0">Đoàn Minh Khang</h5>
+                  <span class="fs-14 clr-neutral-80 d-inline-block">Designer</span>
+                </div>
+              </div>
+              <p class="fs-18 clr-neutral-80 mb-0 mt-6">"Khách hàng đang hồi hộp với các giải pháp hình ảnh AI của chúng tôi. Họ đánh giá cao kết quả ấn tượng, tiết kiệm thời gian và sáng tạo mới."</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img src="assets/img/testimonial-4-shape-circle.png" alt="image" class="img-fluid testimonial-4-shape testimonial-4-shape-circle">
+    <img src="assets/img/testimonial-4-shape-dots.png" alt="image" class="img-fluid testimonial-4-shape testimonial-4-shape-dots">
+  </section>
+  <!-- /Testimonial Section -->
+  <!-- Cta Section -->
+  <section class="cta-section-4 section-space-sm-top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="cta-wrapper-4 fadeIn_bottom">
+            <div class="text-center">
+              <span class="rounded-1 bg-primary-key bg-opacity-2 clr-white fs-12 fw-bold px-4 py-2 d-inline-block mb-4 fadeIn_bottom">DNU - AI</span>
+              <h3 class="clr-neutral-90 fw-bold animate-line-3d">DNU - AI được các nhà tư tưởng yêu thích</h3>
+              <p class="mb-0 fs-14 clr-neutral-80 animte-text-from-right">Viết nhanh hơn 10 lần, thu hút khán giả của bạn và không bao giờ đấu tranh với trang trống nữa.</p>
+              <a href="login.html" class="link d-inline-flex justify-content-center align-items-center gap-2 py-4 px-6 border border-primary-key :border-primary-30 bg-primary-key :bg-primary-30 rounded-1 fw-bold clr-white mt-8 :arrow-btn fadeIn_bottom">
+                <span>Bắt đầu ngay bây giờ</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <img src="assets/img/cta-4-bg.png" alt="image" class="img-fluid cta-wrapper-4-bg w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Phần CTA -->
+  <!-- Footer 7 Section -->
+  <footer class="footer-7">
+    <div class="footer-7-wrapper">
+      <div class="container">
+        <div class="row gap-4 align-items-center justify-content-between">
+          <div class="col-xl-5">
+            <ul class="list list-row flex-wrap gap-6 justify-content-center justify-content-xl-start">
+              <li>
+                <a href="https://www.facebook.com/" class="link clr-neutral-80 d-flex gap-2 :clr-fb">
+                  <i class="bi bi-facebook"></i> Facebook </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" class="link clr-neutral-80 d-flex gap-2 :clr-ins">
+                  <i class="bi bi-instagram"></i> Instagram </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" class="link clr-neutral-80 d-flex gap-2 :clr-tw">
+                  <i class="bi bi-twitter"></i> Twitter </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/" class="link clr-neutral-80 d-flex gap-2 :clr-in">
+                  <i class="bi bi-linkedin"></i> TikTok </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-5">
+            <ul class="list list-row flex-wrap gap-6 justify-content-xl-end justify-content-center">
+              <li>
+                <a href="privacy-policy.html" class="link clr-neutral-80 :clr-primary-key">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a href="terms-service.html" class="link clr-neutral-80
+                             :clr-primary-key"> Điều khoản dịch vụ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="fs-14 fw-semibold mb-0 text-center mt-xl-15 mt-lg-10 mt-md-8 mt-5 clr-neutral-80">Bản quyền @2024 Tất cả các quyền được bảo lưu bởi <a href="index-7.html" class="link clr-primary-key">Đoàn Minh Khang</a></p>
+      </div>
+    </div>
+    <div class="radar-logo-wrapper">
+      <div class="radar">
+        <div class="animated-text-wrapper">
+          <p class="cd-headline slide mb-0">
+            <span class="cd-words-wrapper">
+              <b class="is-visible">DNU - AI</b>
+              <b>DNU - AI</b>
+              <b>DNU - AI</b>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="logo-wrapper d-flex justify-content-center align-items-center">
+        <img src="assets/img/hero-7-logo.png" alt="image" class="img-fluid hero-7-logo">
+      </div>
+    </div>
+    <img src="assets/img/footer-7-shape-bottom-circle.png" alt="image" class="img-fluid object-fit-cover footer-7-shape footer-7-shape-bottom-circle">
+    <img src="assets/img/footer-7-shape-left.png" alt="image" class="img-fluid footer-7-shape footer-7-shape-left">
+    <img src="assets/img/footer-7-shape-right.png" alt="image" class="img-fluid footer-7-shape footer-7-shape-right">
+  </footer>
+  <!-- /Footer 7 Section -->
+  <!-- scrpts -->
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

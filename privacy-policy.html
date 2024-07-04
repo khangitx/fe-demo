@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DNU - AI">
+  <meta name="keywords" content="DNU - AI">
+  <meta name="author" content="DoanMinhKhang">
+  <title>DNU - AI</title>
+  <link rel="stylesheet" href="assets/css/fonts/ff-1.css">
+  <link rel="stylesheet" href="assets/css/fonts/ff-3.css">
+  <link rel="stylesheet" href="assets/css/fonts/bootstrap-icons.css">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="bg-black">
+  <!-- trình tải trước -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="assets/img/preloader-img.png" alt="hình ảnh">
+    </div>
+  </div>
+  <!-- kết thúc trình tải trước -->
+  <!-- Con trỏ tùy chỉnh  -->
+  <div class="custom-cursor">
+    <div>
+      <span></span>
+      <svg class="custom-cursor__img" width="119" height="45" viewBox="0 0 119 45" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1130_4828)">
+          <path
+            d="M10.9627 22.9931L12.2909 16.1687C12.603 14.5633 14.1573 13.0107 15.7632 12.7011L21.5757 11.5778C23.181 11.2681 23.2911 10.4355 21.8214 9.719L2.95694 0.527836C1.48667 -0.188687 0.764833 0.470432 1.34397 1.99934L9.34853 23.1305C9.92766 24.6594 10.6501 24.5984 10.9627 22.9931Z"
+            fill="url(#paint0_linear_1130_4828)" />
+        </g>
+        <rect x="16" y="16.2383" width="103" height="28" rx="4" fill="url(#paint1_linear_1130_4828)" />
+        <defs>
+          <linearGradient id="paint0_linear_1130_4828" x1="-58.0002" y1="-33.2617" x2="25.4638" y2="2.23919"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_1130_4828" x1="-53.2743" y1="34.7382" x2="110.992" y2="27.6664"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="1" stop-color="#F49959" />
+          </linearGradient>
+          <clipPath id="clip0_1130_4828">
+            <rect width="24" height="24" fill="white" transform="translate(0 0.238281)" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div></div>
+  </div>
+  <!-- /Con trỏ tùy chỉnh  -->
+  <!-- Phần đầu trang 7 -->
+  <div class="header-top pt-6 d-none d-lg-block transition position-absolute w-100 z-index-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+            <a href="#"
+              class="link d-inline-block py-1 px-2 rounded secondary-fixed on-secondary-fixed-variant ff-1 fs-12 lh-1 fw-bold text-center flex-shrink-0">
+              Ưu đãi có hạn </a>
+            <span class="d-block ff-1 fs-12 fw-semibold clr-white"> Đăng ký và nhận giảm giá thêm 20% khi thanh toán.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header header--7 header--fixed py-lg-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="menu d-lg-flex justify-content-lg-between align-items-lg-center py-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo link d-inline-flex align-items-center flex-shrink-0">
+                <img src="assets/img/logo-light.png" alt="logo" class="img-fluid object-fit-contain">
+              </a>
+              <button
+                class="menu-toggle w-10 h-10 p-0 border-0 lh-1 bg-primary-50 clr-neutral-100 :clr-neutral-100 transition :bg-primary-300 rounded flex-shrink-0 d-lg-none order-sm-3 fs-24">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+            <div
+              class="menu-nav d-flex align-items-lg-center flex-column flex-lg-row flex-grow-1 gap-4 pb-4 pb-lg-0 rounded">
+              <ul class="list list-lg-row mx-lg-auto rounded-pill align-items-center">
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub menu-link-active"> Trang chủ </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="index.html" class="link menu-sub-link gap-4">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-image-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> Tạo Hình ảnh AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-2.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-saas-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> AI SaaS </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-3.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-chatbot-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> AI Chatbot </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-4.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-content-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> Người tạo Nội dung AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-5.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-voice-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> Tạo Giọng nói AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-6.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-video-icon.png" alt="hình ảnh" class="img-fluid">
+                        </span> Trình tạo Video AI </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="index-7.html" class="link menu-sub-link gap-3">
+                        <span class="d-none d-lg-inline-block">
+                          <img src="assets/img/ai-saas-icon-2.png" alt="hình ảnh" class="img-fluid">
+                        </span> AI DNU </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list">
+                  <a href="pricing.html" class="link menu-link"> Bảng giá </a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub"> Blog </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="blog-1.html" class="link menu-sub-link"> Danh sách Blog 1 </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="blog-2.html" class="link menu-sub-link"> Danh sách Blog 2 </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="blog-details.html" class="link menu-sub-link"> Chi tiết Blog </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="link menu-link has-sub"> Các trang </a>
+                  <ul class="list menu-sub">
+                    <li class="menu-sub-list">
+                      <a href="featured.html" class="link menu-sub-link"> Nổi bật </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="about.html" class="link menu-sub-link"> Về chúng tôi </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="use-cases.html" class="link menu-sub-link"> Trường hợp sử dụng </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="copywrite.html" class="link menu-sub-link"> Bản quyền </a>
+                    </li>
+                    <li class="menu-sub-list">
+                      <a href="faq.html" class="link menu-sub-link"> Câu hỏi thường gặp </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="d-inline-flex align-items-center menu-link h-select-link">
+                  <div class="h-select">
+                    <i class="bi bi-globe-americas"></i>
+                    <select>
+                      <option>VN</option>
+                      <option>EN</option>
+                      <option>RN</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="d-inline-flex align-items-center menu-link h-select-link">
+                  <div class="h-select">
+                    <i class="bi bi-currency-dollar"></i>
+                    <select>
+                      <option>Vnd</option>
+                      <option>Usd</option>
+                      <option>Rup</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list list-lg-row gap-4 gap-lg-6 rounded-pill py-lg-2 px-lg-3">
+                <li class="menu-list mx-4 mx-lg-0">
+                  <a href="login.html" class="link d-inline-flex justify-content-center py-2 px-4 border border-neutral-30 :border-primary-30 :bg-primary-30
+                                     rounded-pill fs-14 fw-bold text-center clr-white"> Đăng nhập </a>
+                </li>
+                <li class="menu-list mx-4 mx-lg-0">
+                  <a href="register.html"
+                    class="link d-inline-flex justify-content-center align-items-center gap-2 py-2 px-4 border border-primary-key :border-primary-30 bg-primary-key :bg-primary-30 rounded-pill fs-14 fw-bold text-center clr-white">
+                    <span class="d-block"> Đăng ký </span>
+                    <span class="d-block fs-10">
+                      <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Phần đầu trang 7 -->
+  <section class="breadcrumb-section">
+    <div class="breadcrumb-section-inner">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-xxl-5 col-xl-8">
+            <div class="text-center">
+              <div class="d-inline-flex align-items-center py-2 px-4 bg-info-10 bg-opacity-3 rounded-1">
+                <span class="fs-12 clr-white">DNU - AI</span>
+              </div>
+              <h2 class="h3 fw-bold clr-neutral-87 mt-4 mb-0">Quyền riêng tư và chính sách</h2>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div class="section-space-xsm-y">
+              <h5 class="clr-neutral-90"> Giới thiệu </h5>
+              <p class="clr-neutral-80"> Những điều khoản và điều kiện này phác thảo các quy tắc và quy định cho việc sử
+                dụng Trang web của DNU - AI. </p>
+              <p class="mb-6 clr-neutral-80"> Chúng tôi đam mê trao quyền cho các nhà sáng tạo bằng những công cụ họ cần
+                để hiện thực hóa tầm nhìn của họ, đó là lý do tại sao chúng tôi đã phát triển. Làm việc trên toàn cầu
+                với các thương hiệu lớn nhất, chúng tôi tin rằng an toàn. Chúng tôi kết hợp các ý tưởng và hành vi, và
+                những hiểu biết với khách hàng yêu thích các dịch vụ của chúng tôi. </p>
+              <ul class="list gap-6 mb-6">
+                <li class="welcome-list-1">
+                  <div class="d-flex gap-3">
+                    <span
+                      class="flex-shrink-0 d-grid place-content-center w-6 h-6 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-key">
+                      <i class="bi bi-check2"></i>
+                    </span>
+                    <span class="d-block clr-neutral-70"> Chỉnh sửa hình ảnh thông minh </span>
+                  </div>
+                </li>
+                <li class="welcome-list-1">
+                  <div class="d-flex gap-3">
+                    <span
+                      class="flex-shrink-0 d-grid place-content-center w-6 h-6 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-key">
+                      <i class="bi bi-check2"></i>
+                    </span>
+                    <span class="d-block clr-neutral-70"> Phong cách hình ảnh có thể tùy chỉnh </span>
+                  </div>
+                </li>
+                <li class="welcome-list-1">
+                  <div class="d-flex gap-3">
+                    <span
+                      class="flex-shrink-0 d-grid place-content-center w-6 h-6 rounded-circle border border-primary-key border-opacity-3 bg-primary-key bg-opacity-2 clr-primary-key">
+                      <i class="bi bi-check2"></i>
+                    </span>
+                    <span class="d-block clr-neutral-70"> Tạo hình ảnh chưa từng có </span>
+                  </div>
+                </li>
+              </ul>
+              <p class="clr-neutral-80"> Bằng cách truy cập trang web này, chúng tôi giả định rằng bạn chấp nhận đầy đủ
+                các điều khoản và điều kiện này. Không tiếp tục sử dụng trang web của Kohost nếu bạn không chấp nhận tất
+                cả các điều khoản và điều kiện được nêu trên trang này. </p>
+              <p class="clr-neutral-80 mb-0"> Thuật ngữ sau đây áp dụng cho các Điều khoản và Điều kiện, Tuyên bố về
+                Quyền riêng tư và Thông báo từ chối trách nhiệm và bất kỳ hoặc tất cả các Thỏa thuận: "Khách hàng",
+                "Bạn" và "Của bạn" đề cập đến bạn, người truy cập trang web này và chấp nhận các điều khoản và điều kiện
+                của Công ty. "Công ty", "Chúng tôi", "Chúng tôi", "Của chúng tôi" và "Chúng tôi" đề cập đến Công ty của
+                chúng tôi. "Bên", "Các bên", hoặc "Chúng tôi" đề cập đến cả Khách hàng và chúng tôi, hoặc một trong hai
+                là Khách hàng hoặc chúng tôi. Tất cả các thuật ngữ đề cập đến việc cung cấp, chấp nhận và xem xét thanh
+                toán cần thiết để thực hiện quy trình hỗ trợ của chúng tôi cho Khách hàng theo cách phù hợp nhất, cho dù
+                bằng các cuộc họp chính thức có thời lượng cố định, hoặc bất kỳ phương tiện nào khác, với mục đích rõ
+                ràng là đáp ứng nhu cầu của Khách hàng liên quan đến việc cung cấp dịch vụ / sản phẩm được nêu rõ của
+                Công ty, phù hợp với và tuân theo pháp luật hiện hành của . Bất kỳ việc sử dụng thuật ngữ trên hoặc các
+                từ khác ở dạng số ít, số nhiều, viết hoa và / hoặc anh ấy / cô ấy hoặc họ, được coi là có thể thay thế
+                cho nhau và do đó đề cập đến cùng một. </p>
+            </div>
+            <div class="section-space-xsm-y">
+              <h5 class="clr-neutral-90"> Sử dụng dịch vụ của chúng tôi </h5>
+              <p class="clr-neutral-80"> Chúng tôi sẽ chấp thuận các yêu cầu liên kết từ các tổ chức này nếu chúng tôi
+                xác định rằng: (a) liên kết sẽ không phản ánh không tốt về chúng tôi hoặc các doanh nghiệp được công
+                nhận của chúng tôi (ví dụ: các hiệp hội thương mại hoặc các tổ chức khác đại diện cho các loại hình
+                doanh nghiệp vốn dĩ đáng ngờ, chẳng hạn như cơ hội làm việc tại nhà, sẽ không được phép liên kết); (b)
+                tổ chức không có hồ sơ không thỏa đáng với chúng tôi; (c) lợi ích cho chúng tôi từ khả năng hiển thị
+                liên quan đến siêu liên kết vượt quá sự vắng mặt của Kohost; và (d) nơi liên kết nằm trong bối cảnh
+                thông tin tài nguyên chung hoặc nếu không phù hợp với nội dung biên tập trong bản tin hoặc sản phẩm
+                tương tự thúc đẩy sứ mệnh của tổ chức. </p>
+              <p class="clr-neutral-80"> Các tổ chức này có thể liên kết đến trang chủ của chúng tôi, đến các ấn phẩm
+                hoặc đến thông tin trang web khác miễn là liên kết: (a) không gây hiểu nhầm theo bất kỳ cách nào; (b)
+                không sai lệch ngụ ý tài trợ, xác nhận hoặc chấp thuận của bên liên kết và các sản phẩm hoặc dịch vụ của
+                nó; và (c) phù hợp với bối cảnh của trang web của bên liên kết. </p>
+              <p class="clr-neutral-80"> Nếu bạn là một trong những tổ chức được liệt kê trong đoạn 2 ở trên và quan tâm
+                đến việc liên kết đến trang web của chúng tôi, bạn phải thông báo cho chúng tôi bằng cách gửi email đến
+                name@yourdomain.com. Vui lòng bao gồm tên của bạn, tên tổ chức của bạn, thông tin liên lạc (như số điện
+                thoại và / hoặc địa chỉ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/breadcrumb-shape-top.png" alt="image" class="img-fluid breadcrumb-shape breadcrumb-shape-top">
+    <img src="assets/img/breadcrumb-shape-left.png" alt="image"
+      class="img-fluid breadcrumb-shape breadcrumb-shape-left">
+    <img src="assets/img/breadcrumb-shape-right.png" alt="image"
+      class="img-fluid breadcrumb-shape breadcrumb-shape-right">
+    <img src="assets/img/breadcrumb-shape-line-left.png" alt="image"
+      class="img-fluid breadcrumb-shape breadcrumb-shape-line-left">
+    <img src="assets/img/breadcrumb-shape-line-right.png" alt="image"
+      class="img-fluid breadcrumb-shape breadcrumb-shape-line-right">
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer-inner section-space-sm-top section-space-xsm-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="footer-2__content position-relative z-1 section-space-sm-y bg-black border border-neutral-variant-30 rounded-5 px-4 px-xsm-6 px-xl-12">
+            <div class="row g-4 gy-5 gy-lg-0">
+              <div class="col-lg-4">
+                <a href="index.html" class="logo link d-inline-flex align-items-center flex-shrink-0 mb-15">
+                  <img src="assets/img/logo-light.png" alt="logo" class="img-fluid object-fit-contain">
+                </a>
+                <div class="w-100"></div>
+                <div class="d-inline-flex gap-4 align-items-center py-3 px-6 bg-neutral-10 rounded-2">
+                  <div class="w-7 h-7 rounded-circle overflow-hidden flex-shrink-0">
+                    <img src="assets/img/blog-img-2.jpg" alt="image" class="w-100 h-100 object-fit-cover">
+                  </div>
+                  <div class="flex-grow-1">
+                    <span class="d-block mb-1 fs-12 clr-white"> Được cung cấp bởi </span>
+                    <span class="d-block fs-14 fw-bold clr-white"> Đoàn Minh Khang </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row g-4 gy-5 gy-lg-0">
+                  <div class="col-md-3">
+                    <h6 class="mb-5 fs-18 clr-neutral-90"> Nguồn </h6>
+                    <ul class="list gap-4">
+                      <li>
+                        <a href="blog-1.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Bài viết </a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Giới thiệu
+                        </a>
+                      </li>
+                      <li>
+                        <a href="copywrite.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Truy cập
+                          API </a>
+                      </li>
+                      <li>
+                        <a href="faq.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Câu hỏi thường
+                          gặp </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h6 class="mb-5 fs-18 clr-neutral-90"> Menu nhanh </h6>
+                    <ul class="list gap-4">
+                      <li>
+                        <a href="featured.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Tính năng
+                        </a>
+                      </li>
+                      <li>
+                        <a href="login.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Đăng nhập </a>
+                      </li>
+                      <li>
+                        <a href="pricing.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Bảng giá
+                        </a>
+                      </li>
+                      <li>
+                        <a href="register.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Đăng ký
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h6 class="mb-5 fs-18 clr-neutral-90"> Công cụ </h6>
+                    <ul class="list gap-4">
+                      <li>
+                        <a href="use-cases.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Trường hợp
+                          sử dụng </a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Công cụ diễn
+                          đạt lại </a>
+                      </li>
+                      <li>
+                        <a href="index.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Công cụ mở
+                          rộng câu </a>
+                      </li>
+                      <li>
+                        <a href="index.html" class="link d-inline-block clr-neutral-80 :clr-primary-key"> Công cụ tóm
+                          tắt văn bản </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h6 class="mb-5 fs-18 clr-neutral-90"> Liên kết mạng xã hội </h6>
+                    <ul class="list gap-4">
+                      <li>
+                        <a href="https://www.facebook.com/" class="link d-inline-block clr-neutral-70 :clr-primary-key">
+                          Facebook </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/" class="link d-inline-block clr-neutral-70 :clr-primary-key">
+                          Twitter </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/"
+                          class="link d-inline-block clr-neutral-70 :clr-primary-key"> Instagram </a>
+                      </li>
+                      <li>
+                        <a href="https://discord.com/" class="link d-inline-block clr-neutral-70 :clr-primary-key">
+                          Discord </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-space-sm-top">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-3">
+                  <p class="mb-0 clr-white fw-medium fs-14 text-lg-start text-center"> Bản quyền © 2024 <br> <a href="#"
+                      class="link d-inline-block clr-white">Đoàn Minh Khang</a>
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <h6 class="text-md-center clr-white"> Đăng ký nhận bản tin của chúng tôi 👍 </h6>
+                  <div
+                    class="newsletter-1 d-inline-block w-100 max-text-60 mx-auto position-relative z-1 overflow-hidden rounded-pill">
+                    <div class="d-flex p-3 bg-neutral-10 rounded ">
+                      <input type="text" class="form-control newsletter-1__input bg-transparent clr-neutral-60"
+                        placeholder="Nhập địa chỉ email">
+                      <button type="submit"
+                        class="bg-primary-key :bg-primary-30 position-relative z-1 link d-inline-flex justify-content-center align-items-center gap-2 px-5 py-2 rounded-pill fs-14 fw-bold text-center border-0 clr-white">
+                        Đăng ký </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 text-lg-end text-center">
+                  <a href="#"
+                    class="link w-12 h-12 bg-neutral-4 clr-white d-inline-flex justify-content-center align-items-center rounded-2">
+                    <i class="bi bi-arrow-up"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="assets/img/footer-2-shape-1.png" alt="image"
+              class="img-fluid d-none d-md-block pointer-none position-absolute start-0 bottom-0 z-n1">
+            <img src="assets/img/footer-2-shape-2.png" alt="image"
+              class="img-fluid d-none d-md-block pointer-none position-absolute end-0 bottom-0 z-n1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/footer-inner-shape-left.png" alt="image"
+      class="img-fluid footer-inner-shape footer-inner-shape-left">
+    <img src="assets/img/footer-inner-shape-right.png" alt="image"
+      class="img-fluid footer-inner-shape footer-inner-shape-right">
+    <img src="assets/img/footer-inner-shape-line-left.png" alt="image"
+      class="img-fluid footer-inner-shape footer-inner-shape-line-left">
+    <img src="assets/img/footer-inner-shape-line-right.png" alt="image"
+      class="img-fluid footer-inner-shape footer-inner-shape-line-right">
+  </footer>
+  <!-- /Footer Section -->
+  <!-- scrpts -->
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/animatedt-title.js"></script>
+</body>
+
+</html>
